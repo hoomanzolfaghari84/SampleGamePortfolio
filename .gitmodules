@@ -1,0 +1,3 @@
+[submodule "SampleGame/Engine/vendors/spdlog"]
+	path = SampleGame/Engine/vendors/spdlog
+	url = git@github.com:gabime/spdlog.git

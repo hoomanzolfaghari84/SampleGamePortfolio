@@ -2,6 +2,8 @@
 
 // For use by the  HEngine applications
 
-#include "HEngine/Application.h"
+#include "HEngine/Initializations/Application.h"
 
-#include "HEngine/EntryPoint.h"
+#include "HEngine/Initializations//EntryPoint.h"
+
+#include "HEngine/Core/Scene.h"

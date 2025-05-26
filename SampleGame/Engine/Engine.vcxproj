@@ -19,13 +19,29 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\HEngine\Application.cpp" />
-    <ClCompile Include="src\HEngine\Core.h" />
+    <ClCompile Include="src\HEngine\Utils\HVector2D.cpp" />
+    <ClCompile Include="src\HEngine\ECS\Component.cpp" />
+    <ClCompile Include="src\HEngine\ECS\Entity.cpp" />
+    <ClCompile Include="src\HEngine\ECS\EntityManager.cpp" />
+    <ClCompile Include="src\HEngine\Core\GameEngine.cpp" />
+    <ClCompile Include="src\HEngine\Core\HTime.cpp" />
+    <ClCompile Include="src\HEngine\Core\Scene.cpp" />
+    <ClCompile Include="src\HEngine\Initializations\Application.cpp" />
+    <ClCompile Include="src\HEngine\Initializations\Core.h" />
+    <ClCompile Include="src\HEngine\Core\UUID.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\HEngine\Utils\HVector2D.h" />
+    <ClInclude Include="src\HEngine\ECS\Component.h" />
+    <ClInclude Include="src\HEngine\ECS\Entity.h" />
+    <ClInclude Include="src\HEngine\ECS\EntityManager.h" />
+    <ClInclude Include="src\HEngine\Core\GameEngine.h" />
+    <ClInclude Include="src\HEngine\Core\HTime.h" />
+    <ClInclude Include="src\HEngine\Core\Scene.h" />
     <ClInclude Include="src\HEngine.h" />
-    <ClInclude Include="src\HEngine\Application.h" />
-    <ClInclude Include="src\HEngine\EntryPoint.h" />
+    <ClInclude Include="src\HEngine\Initializations\Application.h" />
+    <ClInclude Include="src\HEngine\Initializations\EntryPoint.h" />
+    <ClInclude Include="src\HEngine\Core\UUID.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

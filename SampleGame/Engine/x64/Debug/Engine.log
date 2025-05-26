@@ -1,2 +1,89 @@
-﻿  Application.cpp
-  Engine.vcxproj -> C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\Engine.dll
+﻿  Component.cpp
+  Entity.cpp
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(8,25): error C2653: 'sf': is not a class or namespace name
+  (compiling source file 'src/HEngine/ECS/Component.cpp')
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(8,29): error C2061: syntax error: identifier 'RenderWindow'
+  (compiling source file 'src/HEngine/ECS/Component.cpp')
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(8,25): error C2653: 'sf': is not a class or namespace name
+  (compiling source file 'src/HEngine/ECS/Entity.cpp')
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(8,29): error C2061: syntax error: identifier 'RenderWindow'
+  (compiling source file 'src/HEngine/ECS/Entity.cpp')
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(19,17): error C2653: 'sf': is not a class or namespace name
+  (compiling source file 'src/HEngine/ECS/Entity.cpp')
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(19,21): error C2061: syntax error: identifier 'RenderWindow'
+  (compiling source file 'src/HEngine/ECS/Entity.cpp')
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(8,21): error C2653: 'sf': is not a class or namespace name
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(8,14): error C2761: 'void Entity::Render(void)': redeclaration of member is not allowed
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(8,25): error C2065: 'RenderWindow': undeclared identifier
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(8,39): error C2065: 'window': undeclared identifier
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(8,47): error C2143: syntax error: missing ';' before '{'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(9,23): error C2065: 'components': undeclared identifier
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(9,5): error C2059: syntax error: 'for'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(9,33): error C2059: syntax error: ')'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(9,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(10,9): error C2146: syntax error: missing ';' before identifier 'comp'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(11,1): error C2059: syntax error: '}'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(11,1): error C2143: syntax error: missing ';' before '}'
+  EntityManager.cpp
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(8,25): error C2653: 'sf': is not a class or namespace name
+  (compiling source file 'src/HEngine/ECS/EntityManager.cpp')
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(8,29): error C2061: syntax error: identifier 'RenderWindow'
+  (compiling source file 'src/HEngine/ECS/EntityManager.cpp')
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(19,17): error C2653: 'sf': is not a class or namespace name
+  (compiling source file 'src/HEngine/ECS/EntityManager.cpp')
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(19,21): error C2061: syntax error: identifier 'RenderWindow'
+  (compiling source file 'src/HEngine/ECS/EntityManager.cpp')
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.h(14,17): error C2653: 'sf': is not a class or namespace name
+  (compiling source file 'src/HEngine/ECS/EntityManager.cpp')
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.h(14,21): error C2061: syntax error: identifier 'RenderWindow'
+  (compiling source file 'src/HEngine/ECS/EntityManager.cpp')
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.cpp(8,28): error C2653: 'sf': is not a class or namespace name
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.cpp(8,21): error C2761: 'void EntityManager::Render(void)': redeclaration of member is not allowed
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.cpp(8,32): error C2065: 'RenderWindow': undeclared identifier
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.cpp(8,46): error C2065: 'window': undeclared identifier
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.cpp(8,54): error C2143: syntax error: missing ';' before '{'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.cpp(9,20): error C2065: 'entities': undeclared identifier
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.cpp(9,5): error C2059: syntax error: 'for'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.cpp(9,28): error C2059: syntax error: ')'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.cpp(9,20): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.cpp(10,9): error C2146: syntax error: missing ';' before identifier 'e'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.cpp(11,1): error C2059: syntax error: '}'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.cpp(11,1): error C2143: syntax error: missing ';' before '}'
+  GameEngine.cpp
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\GameEngine.cpp(9,19): error C2039: 'Init': is not a member of 'Scene'
+      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\Scene.h(2,7):
+      see declaration of 'Scene'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\GameEngine.cpp(12,18): error C2511: 'void GameEngine::Init(Scene *)': overloaded member function not found in 'GameEngine'
+      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\GameEngine.h(6,7):
+      see declaration of 'GameEngine'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\GameEngine.cpp(14,5): error C2597: illegal reference to non-static member 'GameEngine::currentScene'
+      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\GameEngine.h(12,12):
+      see declaration of 'GameEngine::currentScene'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\GameEngine.cpp(33,23): error C2039: 'Update': is not a member of 'Scene'
+      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\Scene.h(2,7):
+      see declaration of 'Scene'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\GameEngine.cpp(35,23): error C2039: 'Render': is not a member of 'Scene'
+      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\Scene.h(2,7):
+      see declaration of 'Scene'
+  
+  HTime.cpp
+  Scene.cpp
+  Application.cpp
+  Core.h
+  Generating Code...

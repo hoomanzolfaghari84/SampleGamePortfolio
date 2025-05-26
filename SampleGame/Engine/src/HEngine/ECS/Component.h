@@ -2,7 +2,6 @@
 
 #include "../Core/UUID.h"
 #include <string>
-#include "../../../HVector2D.h"
 #include <SFML/Graphics.hpp>
 #include <functional>
 #include "../Utils/HVector2D.h"
@@ -56,6 +55,12 @@ namespace HEngine {
 		bool hovered = false;
 	};
 
+
+	struct BoxCollisionComponent : public Component {
+		sf::RectangleShape shape;
+		std::function<void()> onCollision;
+	
+	};
 
 	//struct SpriteRendererComponent : public Component {
 	//	sf::Sprite sprite;

@@ -102,11 +102,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>HE_PLATFORM_WINDOWS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)\Engine\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Engine\src;$(SolutionDir)\Engine\vendors\spdlog\include;C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include;</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>winmm.lib;opengl32.lib; freetype.lib; gdi32.lib;sfml-window-d.lib;sfml-graphics-d.lib;sfml-system-d.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -125,18 +129,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\MenuScene\Button.cpp" />
-    <ClCompile Include="src\MenuScene\MenuScene.cpp" />
     <ClCompile Include="src\TurnoverGame.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Engine\Engine.vcxproj">
       <Project>{ddaaa202-a24b-4fd3-a5e7-89596e949ee0}</Project>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="src\MenuScene\Button.h" />
-    <ClInclude Include="src\MenuScene\MenuScene.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -19,25 +19,25 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\HEngine\Utils\HVector2D.cpp" />
-    <ClCompile Include="src\HEngine\ECS\Component.cpp" />
-    <ClCompile Include="src\HEngine\ECS\Entity.cpp" />
     <ClCompile Include="src\HEngine\ECS\EntityManager.cpp" />
+    <ClCompile Include="src\HEngine\ECS\Scene.cpp" />
+    <ClCompile Include="src\HEngine\Utils\HVector2D.cpp" />
+    <ClCompile Include="src\HEngine\ECS\Entity.cpp" />
     <ClCompile Include="src\HEngine\Core\GameEngine.cpp" />
     <ClCompile Include="src\HEngine\Core\HTime.cpp" />
-    <ClCompile Include="src\HEngine\Core\Scene.cpp" />
     <ClCompile Include="src\HEngine\Initializations\Application.cpp" />
     <ClCompile Include="src\HEngine\Initializations\Core.h" />
     <ClCompile Include="src\HEngine\Core\UUID.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\HEngine\ECS\ComponentRegistry.h" />
     <ClInclude Include="src\HEngine\Utils\HVector2D.h" />
     <ClInclude Include="src\HEngine\ECS\Component.h" />
     <ClInclude Include="src\HEngine\ECS\Entity.h" />
     <ClInclude Include="src\HEngine\ECS\EntityManager.h" />
     <ClInclude Include="src\HEngine\Core\GameEngine.h" />
     <ClInclude Include="src\HEngine\Core\HTime.h" />
-    <ClInclude Include="src\HEngine\Core\Scene.h" />
+    <ClInclude Include="src\HEngine\ECS\Scene.h" />
     <ClInclude Include="src\HEngine.h" />
     <ClInclude Include="src\HEngine\Initializations\Application.h" />
     <ClInclude Include="src\HEngine\Initializations\EntryPoint.h" />
@@ -128,7 +128,7 @@
       <PreprocessorDefinitions>HE_PLATFORM_WINDOWS;HE_BUILD_DLL;SFML_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Engine\vendors\spdlog\include;C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
@@ -147,7 +147,7 @@
       <PreprocessorDefinitions>HE_PLATFORM_WINDOWS;HE_BUILD_DLL;_WINDLLNDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Engine\vendors\spdlog\include;C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

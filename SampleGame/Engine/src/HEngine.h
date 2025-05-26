@@ -4,6 +4,11 @@
 
 #include "HEngine/Initializations/Application.h"
 
-#include "HEngine/Initializations//EntryPoint.h"
 
-#include "HEngine/Core/Scene.h"
+#include "HEngine/ECS/Scene.h"
+
+#include "HEngine/ECS/Component.h"
+#include "HEngine/ECS/ComponentRegistry.h"
+
+#include "HEngine/Core/GameEngine.h"
+#include <SFML/Graphics.hpp>

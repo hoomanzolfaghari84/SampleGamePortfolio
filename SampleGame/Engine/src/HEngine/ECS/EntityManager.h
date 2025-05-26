@@ -1,36 +1,31 @@
-// EntityManager.h
 #pragma once
-#include <vector>
+
+#include "..\Core\UUID.h"
+#include <unordered_map>
+#include <functional>
 #include <memory>
-#include "Entity.h"
-#include "../Core/UUID.h"
-#include "../Core/Scene.h"
+#include <string>
 
-#include <functional> 
+namespace HEngine {
 
-namespace HEngine  {
-    class EntityManager {
-    public:
-        EntityManager(Scene* owningScene)
-            : m_Scene(owningScene) {
-        }
+	class Scene;
+	class Entity;
 
-        Entity* CreateEntity(const std::string& name = "Entity") {
-            UUID id;
-            auto entity = std::make_unique<Entity>(id, m_Scene, name);
-            Entity* ptr = entity.get();
-            m_Entities.push_back(std::move(entity));
-            return ptr;
-        }
+	class EntityManager {
+	public:
+		EntityManager(Scene* owningScene);
 
+		Entity* CreateEntity(const std::string& name = "Entity");
 
-        void ForEach(const std::function<void(Entity&)>& func) {
-            for (auto& e : m_Entities)
-                func(*e);
-        }
+		void DestroyEntity(const UUID& id);
 
-    private:
-        Scene* m_Scene;
-        std::vector<std::unique_ptr<Entity>> m_Entities;
-    };
+		Entity* GetEntity(const UUID& id);
+
+		void ForEach(const std::function<void(Entity&)>& func);
+
+	private:
+		Scene* m_Scene;
+		std::unordered_map<UUID, std::unique_ptr<Entity>> m_Entities;
+	};
+
 }

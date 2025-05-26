@@ -1,39 +1,42 @@
 #include "GameEngine.h"
-#include "Scene.h"
+#include "../ECS/Scene.h"
 #include "HTime.h"
 
 
-void GameEngine::Init() {
-    sf::RenderWindow window(sf::VideoMode({ 200, 200 }), "SFML works!");
-    currentScene = new SampleScene();
-    currentScene->Init();
+void HEngine::GameEngine::Init() {
+    sf::RenderWindow m_window(sf::VideoMode({ 200, 200 }), "SFML works!");
 }
 
-void GameEngine::Init(Scene* initScene) {
-    sf::RenderWindow window(sf::VideoMode({ 200, 200 }), "SFML works!");
-    currentScene = initScene;
-    currentScene->Init();
+void HEngine::GameEngine::Update(float dt)
+{
+    currentScene->Update(dt);
 }
 
-void GameEngine::Run() {
+
+void HEngine::GameEngine::Run() {
     Init();
     sf::Clock clock;
 
-    while (window.isOpen())
+    while (m_window.isOpen())
     {
-        while (const std::optional event = window.pollEvent())
+        while (const std::optional event = m_window.pollEvent())
         {
             if (event->is<sf::Event::Closed>())
-                window.close();
+                m_window.close();
         }
 
         float dt = clock.restart().asSeconds();
         HTime::deltaTime = dt;
 
-        currentScene->Update(dt);
-        window.clear();
-        currentScene->Render(window);
-        window.display();
+        Update(dt);
+        Render();
     }
 
+}
+
+
+void HEngine::GameEngine::Render() {
+    m_window.clear();
+    currentScene->Render(m_window);
+    m_window.display();
 }

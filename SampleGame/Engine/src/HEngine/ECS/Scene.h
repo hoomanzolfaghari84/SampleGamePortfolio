@@ -1,0 +1,31 @@
+#pragma once
+
+#include "EntityManager.h"
+#include "ComponentRegistry.h"
+#include <SFML/Graphics/RenderWindow.hpp>
+
+namespace HEngine {
+
+	class Entity;
+	class EntityManager;
+
+	class Scene {
+	public:
+		Scene();
+		virtual ~Scene() = default;
+
+		Entity* CreateEntity(const std::string& name = "Entity");
+		void DestroyEntity(UUID id);
+
+		ComponentRegistry& GetComponentRegistry();
+		EntityManager& GetEntityManager();
+
+		virtual void Update(float dt) = 0;
+		virtual void Render(sf::RenderWindow& window) = 0;
+
+	private:
+		ComponentRegistry m_ComponentRegistry;
+		EntityManager m_EntityManager;
+	};
+
+}

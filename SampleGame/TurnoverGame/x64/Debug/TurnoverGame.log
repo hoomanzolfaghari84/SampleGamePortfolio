@@ -1,19 +1,159 @@
-﻿  TurnoverGame.cpp
+﻿  MenuScene.cpp
 C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\Logger.h(17,42): warning C4251: 'HEngine::HLogger::s_CoreLogger': 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of 'HEngine::HLogger'
-  (compiling source file 'src/TurnoverGame.cpp')
+  (compiling source file 'src/MenuScene/MenuScene.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(1565,7):
       see declaration of 'std::shared_ptr<spdlog::logger>'
   
 C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\Logger.h(18,42): warning C4251: 'HEngine::HLogger::s_ClientLogger': 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of 'HEngine::HLogger'
-  (compiling source file 'src/TurnoverGame.cpp')
+  (compiling source file 'src/MenuScene/MenuScene.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(1565,7):
       see declaration of 'std::shared_ptr<spdlog::logger>'
   
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.h(40,53): warning C4251: 'HEngine::EntityManager::m_Entities': 'std::unordered_map<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>' needs to have dll-interface to be used by clients of 'HEngine::EntityManager'
+  (compiling source file 'src/MenuScene/MenuScene.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,7):
+      see declaration of 'std::unordered_map<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\ComponentRegistry.h(83,75): warning C4251: 'HEngine::ComponentRegistry::m_Storages': 'std::unordered_map<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,std::hash<std::type_index>,std::equal_to<std::type_index>,std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>' needs to have dll-interface to be used by clients of 'HEngine::ComponentRegistry'
+  (compiling source file 'src/MenuScene/MenuScene.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,7):
+      see declaration of 'std::unordered_map<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,std::hash<std::type_index>,std::equal_to<std::type_index>,std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>'
+  
 C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'src/TurnoverGame.cpp')
+  (compiling source file 'src/MenuScene/MenuScene.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\stdexcept(100,30):
       see declaration of 'std::runtime_error'
       C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
       see declaration of 'sf::Exception'
   
-  TurnoverGame.vcxproj -> C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\TurnoverGame.exe
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(59,61): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(59,61): warning C4244:         with
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(59,61): warning C4244:         [
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(59,61): warning C4244:             T=int
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(59,61): warning C4244:         ]
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(59,61): warning C4244:         and
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(59,61): warning C4244:         [
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(59,61): warning C4244:             T=float
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(59,61): warning C4244:         ]
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(59,49): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(59,49): warning C4244:         with
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(59,49): warning C4244:         [
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(59,49): warning C4244:             T=int
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(59,49): warning C4244:         ]
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(59,49): warning C4244:         and
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(59,49): warning C4244:         [
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(59,49): warning C4244:             T=float
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(59,49): warning C4244:         ]
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(78,122): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(78,122): warning C4244:         with
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(78,122): warning C4244:         [
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(78,122): warning C4244:             T=int
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(78,122): warning C4244:         ]
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(78,122): warning C4244:         and
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(78,122): warning C4244:         [
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(78,122): warning C4244:             T=float
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(78,122): warning C4244:         ]
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(78,110): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(78,110): warning C4244:         with
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(78,110): warning C4244:         [
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(78,110): warning C4244:             T=int
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(78,110): warning C4244:         ]
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(78,110): warning C4244:         and
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(78,110): warning C4244:         [
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(78,110): warning C4244:             T=float
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(78,110): warning C4244:         ]
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(81,126): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(81,126): warning C4244:         with
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(81,126): warning C4244:         [
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(81,126): warning C4244:             T=int
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(81,126): warning C4244:         ]
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(81,126): warning C4244:         and
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(81,126): warning C4244:         [
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(81,126): warning C4244:             T=float
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(81,126): warning C4244:         ]
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(81,114): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(81,114): warning C4244:         with
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(81,114): warning C4244:         [
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(81,114): warning C4244:             T=int
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(81,114): warning C4244:         ]
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(81,114): warning C4244:         and
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(81,114): warning C4244:         [
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(81,114): warning C4244:             T=float
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(81,114): warning C4244:         ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(479,17): error C2512: 'HEngine::UIComponent::UIComponent': no appropriate default constructor available
+  (compiling source file 'src/MenuScene/MenuScene.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(479,17):
+      while trying to match the argument list '()'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(479,17):
+      the template instantiation context (the oldest one first) is
+          C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\TurnoverGame\src\MenuScene\MenuScene.cpp(14,31):
+          see reference to function template instantiation 'void HEngine::ComponentRegistry::Add<HEngine::UIComponent>(HEngine::UUID,T)' being compiled
+          with
+          [
+              T=HEngine::UIComponent
+          ]
+          C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\ComponentRegistry.h(47,25):
+          see reference to class template instantiation 'HEngine::ComponentStorage<HEngine::UIComponent>' being compiled
+          C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\ComponentRegistry.h(40,31):
+          see reference to class template instantiation 'std::unordered_map<HEngine::UUID,T,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,T>>>' being compiled
+          with
+          [
+              T=HEngine::UIComponent
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(432,18):
+          while compiling class template member function 'HEngine::UIComponent &std::unordered_map<HEngine::UUID,T,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,T>>>::operator [](const HEngine::UUID &)'
+          with
+          [
+              T=HEngine::UIComponent
+          ]
+              C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\ComponentRegistry.h(23,21):
+              see the first reference to 'std::unordered_map<HEngine::UUID,T,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,T>>>::operator []' in 'HEngine::ComponentStorage<HEngine::UIComponent>::Add'
+          with
+          [
+              T=HEngine::UIComponent
+          ]
+              C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\ComponentRegistry.h(47,32):
+              see the first reference to 'HEngine::ComponentStorage<HEngine::UIComponent>::Add' in 'HEngine::ComponentRegistry::Add'
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(433,22):
+          see reference to function template instantiation 'std::pair<std::_List_node<std::pair<const HEngine::UUID,T>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,bool> std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>::_Try_emplace<const HEngine::UUID&,>(_Keyty)' being compiled
+          with
+          [
+              T=HEngine::UIComponent,
+              _Alloc=std::allocator<std::pair<const HEngine::UUID,HEngine::UIComponent>>,
+              _Kty=HEngine::UUID,
+              _Ty=HEngine::UIComponent,
+              _Hasher=std::hash<HEngine::UUID>,
+              _Keyeq=std::equal_to<HEngine::UUID>,
+              _Keyty=const HEngine::UUID &
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xhash(707,49):
+          see reference to function template instantiation 'std::_List_node_emplace_op2<std::allocator<std::_List_node<std::pair<const HEngine::UUID,T>,std::_Default_allocator_traits<_Alloc>::void_pointer>>>::_List_node_emplace_op2<const std::piecewise_construct_t&,std::tuple<const HEngine::UUID &>,std::tuple<>>(_Alnode &,const std::piecewise_construct_t &,std::tuple<const HEngine::UUID &> &&,std::tuple<> &&)' being compiled
+          with
+          [
+              T=HEngine::UIComponent,
+              _Alloc=std::allocator<std::pair<const HEngine::UUID,HEngine::UIComponent>>,
+              _Alnode=std::allocator<std::_List_node<std::pair<const HEngine::UUID,HEngine::UIComponent>,std::_Default_allocator_traits<std::allocator<std::pair<const HEngine::UUID,HEngine::UIComponent>>>::void_pointer>>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(595,25):
+          see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,const std::piecewise_construct_t&,std::tuple<const HEngine::UUID &>,std::tuple<>>(_Alloc &,_Objty *const ,const std::piecewise_construct_t &,std::tuple<const HEngine::UUID &> &&,std::tuple<> &&)' being compiled
+          with
+          [
+              _Alloc=std::allocator<std::_List_node<std::pair<const HEngine::UUID,HEngine::UIComponent>,std::_Default_allocator_traits<std::allocator<std::pair<const HEngine::UUID,HEngine::UIComponent>>>::void_pointer>>,
+              _Ty=std::pair<const HEngine::UUID,HEngine::UIComponent>,
+              _Objty=std::pair<const HEngine::UUID,HEngine::UIComponent>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory(732,82):
+          see reference to function template instantiation 'std::pair<const HEngine::UUID,T>::pair<const HEngine::UUID&,>(std::piecewise_construct_t,std::tuple<const HEngine::UUID &>,std::tuple<>)' being compiled
+          with
+          [
+              T=HEngine::UIComponent
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(331,15):
+          see reference to function template instantiation 'std::pair<const HEngine::UUID,T>::pair<std::tuple<const HEngine::UUID &>,std::tuple<>,0,>(_Tuple1 &,_Tuple2 &,std::integer_sequence<size_t,0>,std::integer_sequence<size_t>)' being compiled
+          with
+          [
+              T=HEngine::UIComponent,
+              _Tuple1=std::tuple<const HEngine::UUID &>,
+              _Tuple2=std::tuple<>
+          ]
+  

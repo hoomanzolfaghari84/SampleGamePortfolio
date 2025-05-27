@@ -14,7 +14,7 @@ namespace HEngine {
 
     class Scene;
 
-    class Entity {
+    class HENGINE_API Entity {
         friend class EntityManager;
 
     public:
@@ -27,7 +27,7 @@ namespace HEngine {
         const std::string& GetName() const { return m_Name; }
 
 
-        template<typename T, typename... Args>
+        /*template<typename T, typename... Args>
         T& AddComponent(Args&&... args);
         
 
@@ -39,7 +39,7 @@ namespace HEngine {
         bool HasComponent() const;
 
         template<typename T>
-        void RemoveComponent();
+        void RemoveComponent();*/
         
 
         explicit operator bool() const { return m_ID != UUID(0); }
@@ -52,13 +52,20 @@ namespace HEngine {
             return !(*this == other);
         }
 
+        template<typename T>
+        T* GetComponent();
+
+        template<typename T>
+        void AddComponent(T component);
 
     private:
         UUID m_ID;
         Scene* m_Scene;
         std::string m_Name;
 
-        std::unordered_map<std::type_index, std::unique_ptr<Component>> m_Components;
+        
+
+        //std::unordered_map<std::type_index, std::unique_ptr<Component>> m_Components;
     };
 
 }

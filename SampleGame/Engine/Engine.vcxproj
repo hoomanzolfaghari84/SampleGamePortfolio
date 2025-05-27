@@ -31,6 +31,7 @@
     <ClCompile Include="src\HEngine\Core\UUID.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\HEngine\Events\HEvent.h" />
     <ClInclude Include="src\HEngine\Utils\Logger.h" />
     <ClInclude Include="src\HEngine\ECS\ComponentRegistry.h" />
     <ClInclude Include="src\HEngine\Utils\HVector2D.h" />

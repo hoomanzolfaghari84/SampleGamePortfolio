@@ -6,12 +6,14 @@
 #include <memory>
 #include <string>
 
+#include "../Initializations/Core.h"
+
 namespace HEngine {
 
 	class Scene;
 	class Entity;
 
-	class EntityManager {
+	class HENGINE_API EntityManager {
 	public:
 		EntityManager(Scene* owningScene);
 
@@ -20,8 +22,18 @@ namespace HEngine {
 		void DestroyEntity(const UUID& id);
 
 		Entity* GetEntity(const UUID& id);
+		const Entity* GetEntity(const UUID& id) const;
 
 		void ForEach(const std::function<void(Entity&)>& func);
+		void ForEach(const std::function<void(const Entity&)>& func) const;
+
+		//// Prevent copy
+		//EntityManager(const EntityManager&) = delete;
+		//EntityManager& operator=(const EntityManager&) = delete;
+
+		//// Allow move
+		//EntityManager(EntityManager&&) noexcept = default;
+		//EntityManager& operator=(EntityManager&&) noexcept = default;
 
 	private:
 		Scene* m_Scene;

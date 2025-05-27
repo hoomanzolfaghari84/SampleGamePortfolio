@@ -6,6 +6,8 @@
 #include <memory>
 #include <cassert>
 
+#include "../Initializations/Core.h"
+
 namespace HEngine {
 
 	class IComponentStorage {
@@ -38,7 +40,7 @@ namespace HEngine {
 		std::unordered_map<UUID, T> m_Components;
 	};
 
-	class ComponentRegistry {
+	class HENGINE_API ComponentRegistry {
 	public:
 		template<typename T>
 		void Add(UUID id, T component) {
@@ -66,6 +68,16 @@ namespace HEngine {
 			for (auto& [type, storage] : m_Storages)
 				storage->Remove(id);
 		}
+
+
+		//// Prevent copy
+		//ComponentRegistry(const ComponentRegistry&) = delete;
+		//ComponentRegistry& operator=(const ComponentRegistry&) = delete;
+
+		//// Allow move
+		//ComponentRegistry(ComponentRegistry&&) noexcept = default;
+		//ComponentRegistry& operator=(ComponentRegistry&&) noexcept = default;
+
 
 	private:
 		std::unordered_map<std::type_index, std::unique_ptr<IComponentStorage>> m_Storages;

@@ -4,12 +4,14 @@
 #include "ComponentRegistry.h"
 #include <SFML/Graphics/RenderWindow.hpp>
 
+#include "../Initializations/Core.h"
+
 namespace HEngine {
 
 	class Entity;
 	class EntityManager;
 
-	class Scene {
+	class HENGINE_API Scene {
 	public:
 		Scene();
 		virtual ~Scene() = default;

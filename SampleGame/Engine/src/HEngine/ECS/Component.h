@@ -6,18 +6,22 @@
 #include <functional>
 #include "../Utils/HVector2D.h"
 
+
+#include "../Initializations/Core.h"
+
 namespace HEngine {
 
 	class Entity;
 
-	class Component {
+	class HENGINE_API Component {
 	public:
+		Component() = default;
 		virtual ~Component() = default;
 		Entity* entity = nullptr;
 	};
 
 
-	struct IDComponent : Component
+	class HENGINE_API IDComponent : Component
 	{
 		UUID ID;
 
@@ -25,7 +29,7 @@ namespace HEngine {
 		IDComponent(const IDComponent&) = default;
 	};
 
-	struct TagComponent : Component
+	class HENGINE_API TagComponent : Component
 	{
 		std::string Tag;
 
@@ -36,7 +40,7 @@ namespace HEngine {
 		}
 	};
 
-	struct TransformComponent : public Component {
+	class HENGINE_API TransformComponent : public Component {
 		HVector2Df translation = HVector2Df::Zero;
 		float rotation = 0.f; // In degrees
 		HVector2Df scale = HVector2Df::One;
@@ -47,19 +51,39 @@ namespace HEngine {
 		}
 	};
 
-	struct UIComponent : public Component {
-		sf::RectangleShape shape;
+	class HENGINE_API UIComponent : public Component {
+		
 		sf::Text text;
 		std::function<void()> onClick;
 
 		bool hovered = false;
+
+	public:
+		sf::RectangleShape shape;
+		UIComponent(const sf::RectangleShape& shape, sf::Font font = sf::Font("arial.ttf"), const sf::Color& color = sf::Color::White)
+			: shape(shape), text(font) {
+			this->shape.setFillColor(color);
+			SetText("Button Text", font);
+		}
+		void SetText(const std::string& str, const sf::Font& font, unsigned int size = 30) {
+			text.setString(str);
+			text.setFont(font);
+			text.setCharacterSize(size);
+			text.setFillColor(sf::Color::Black);
+			text.setPosition(shape.getPosition() + sf::Vector2f(10.f, 10.f)); // Adjust text position
+		}
 	};
 
 
-	struct BoxCollisionComponent : public Component {
-		sf::FloatRect Bounds;
+	class HENGINE_API BoxCollisionComponent : public Component {
+		
 		std::function<void()> onCollision;
-	
+	public:
+		BoxCollisionComponent() = default;
+	    BoxCollisionComponent(const sf::FloatRect& bounds, std::function<void()> onCollision = nullptr)
+			: Bounds(bounds), onCollision(onCollision) {
+			}
+		sf::FloatRect Bounds;
 	};
 
 	//struct SpriteRendererComponent : public Component {

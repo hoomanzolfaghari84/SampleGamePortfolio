@@ -10,9 +10,15 @@ namespace HEngine {
 
 	Entity* EntityManager::CreateEntity(const std::string& name) {
 		UUID id;
+
+		while (m_Entities.find(id) != m_Entities.end()) {
+			id = UUID(); // generate again
+		}
+
 		auto entity = std::make_unique<Entity>(id, m_Scene, name);
 		Entity* ptr = entity.get();
-		m_Entities.emplace(id, std::move(entity));
+		//m_Entities.emplace(id, std::move(entity));
+		m_Entities.try_emplace(id, std::move(entity));
 		return ptr;
 	}
 
@@ -29,8 +35,19 @@ namespace HEngine {
 		return it != m_Entities.end() ? it->second.get() : nullptr;
 	}
 
+	const Entity* EntityManager::GetEntity(const UUID& id) const
+	{
+		auto it = m_Entities.find(id);
+		return it != m_Entities.end() ? it->second.get() : nullptr;
+	}
+
 	void EntityManager::ForEach(const std::function<void(Entity&)>& func) {
 		for (auto& [id, e] : m_Entities)
+			func(*e);
+	}
+
+	void EntityManager::ForEach(const std::function<void(const Entity&)>& func) const {
+		for (const auto& [id, e] : m_Entities)
 			func(*e);
 	}
 

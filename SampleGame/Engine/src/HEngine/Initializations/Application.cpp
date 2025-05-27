@@ -1,5 +1,6 @@
 #include "Application.h"
 #include <iostream>
+#include "../Utils/Logger.h"
 
 namespace HEngine{
 	Application::Application()
@@ -17,7 +18,7 @@ namespace HEngine{
 		while (i>0)
 		{
 			// Main loop logic goes here
-			std::cout << "Running application... " << i << std::endl;
+			HE_INFO("Application is running. Remaining iterations: {}", i);
 			i--;
 		}
 	}

@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\HEngine\Utils\Logger.cpp" />
     <ClCompile Include="src\HEngine\ECS\EntityManager.cpp" />
     <ClCompile Include="src\HEngine\ECS\Scene.cpp" />
     <ClCompile Include="src\HEngine\Utils\HVector2D.cpp" />
@@ -30,6 +31,7 @@
     <ClCompile Include="src\HEngine\Core\UUID.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\HEngine\Utils\Logger.h" />
     <ClInclude Include="src\HEngine\ECS\ComponentRegistry.h" />
     <ClInclude Include="src\HEngine\Utils\HVector2D.h" />
     <ClInclude Include="src\HEngine\ECS\Component.h" />
@@ -130,6 +132,7 @@
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalIncludeDirectories>$(SolutionDir)\Engine\vendors\spdlog\include;C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

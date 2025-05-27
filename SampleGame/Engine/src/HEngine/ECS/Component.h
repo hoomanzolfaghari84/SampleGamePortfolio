@@ -57,7 +57,7 @@ namespace HEngine {
 
 
 	struct BoxCollisionComponent : public Component {
-		sf::RectangleShape shape;
+		sf::FloatRect Bounds;
 		std::function<void()> onCollision;
 	
 	};

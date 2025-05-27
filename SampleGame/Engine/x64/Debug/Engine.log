@@ -1,8 +1,14 @@
-﻿  EntityManager.cpp
-  Scene.cpp
-  GameEngine.cpp
-  Application.cpp
-  Generating Code...
+﻿  Application.cpp
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\Logger.h(17,42): warning C4251: 'HEngine::HLogger::s_CoreLogger': 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of 'HEngine::HLogger'
+  (compiling source file 'src/HEngine/Initializations/Application.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(1565,7):
+      see declaration of 'std::shared_ptr<spdlog::logger>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\Logger.h(18,42): warning C4251: 'HEngine::HLogger::s_ClientLogger': 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of 'HEngine::HLogger'
+  (compiling source file 'src/HEngine/Initializations/Application.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(1565,7):
+      see declaration of 'std::shared_ptr<spdlog::logger>'
+  
 sfml-window-s-d.lib(VideoMode.obj) : warning LNK4099: PDB 'sfml-window-s.pdb' was not found with 'sfml-window-s-d.lib(VideoMode.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-window-s.pdb'; linking object as if no debug info
 sfml-window-s-d.lib(WindowBase.obj) : warning LNK4099: PDB 'sfml-window-s.pdb' was not found with 'sfml-window-s-d.lib(WindowBase.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-window-s.pdb'; linking object as if no debug info
 sfml-window-s-d.lib(Window.obj) : warning LNK4099: PDB 'sfml-window-s.pdb' was not found with 'sfml-window-s-d.lib(Window.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-window-s.pdb'; linking object as if no debug info

@@ -3,7 +3,7 @@
 // For use by the  HEngine applications
 
 #include "HEngine/Initializations/Application.h"
-
+#include "HEngine/Utils/Logger.h"
 
 #include "HEngine/ECS/Scene.h"
 

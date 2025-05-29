@@ -1,10 +1,12 @@
 #pragma once
 
 #include <cstdint>  // for uint64_t
+#include "../Initializations/Core.h"
+
 
 namespace HEngine {
 
-	class UUID
+	class HENGINE_API UUID
 	{
 	public:
 		UUID();
@@ -34,5 +36,4 @@ namespace std {
 			return static_cast<uint64_t>(uuid);
 		}
 	};
-
 }

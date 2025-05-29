@@ -19,19 +19,26 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\HEngine\ECS\Temp\EntityManager.cpp" />
+    <ClCompile Include="src\HEngine\ECS\RenderSystem.cpp" />
+    <ClCompile Include="src\HEngine\ECS\Component.cpp" />
     <ClCompile Include="src\HEngine\Utils\Logger.cpp" />
     <ClCompile Include="src\HEngine\ECS\EntityManager.cpp" />
     <ClCompile Include="src\HEngine\ECS\Scene.cpp" />
     <ClCompile Include="src\HEngine\Utils\HVector2D.cpp" />
-    <ClCompile Include="src\HEngine\ECS\Entity.cpp" />
     <ClCompile Include="src\HEngine\Core\GameEngine.cpp" />
     <ClCompile Include="src\HEngine\Core\HTime.cpp" />
     <ClCompile Include="src\HEngine\Initializations\Application.cpp" />
     <ClCompile Include="src\HEngine\Initializations\Core.h" />
     <ClCompile Include="src\HEngine\Core\UUID.cpp" />
+    <ClCompile Include="src\HEngine\ECS\System.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\HEngine\ECS\Temp\EntityManager.h" />
+    <ClInclude Include="src\HEngine\ECS\RenderSystem.h" />
+    <ClInclude Include="src\HEngine\ECS\Temp\ECSTypes.hpp" />
     <ClInclude Include="src\HEngine\Events\HEvent.h" />
+    <ClInclude Include="src\HEngine\Utils\Color.h" />
     <ClInclude Include="src\HEngine\Utils\Logger.h" />
     <ClInclude Include="src\HEngine\ECS\ComponentRegistry.h" />
     <ClInclude Include="src\HEngine\Utils\HVector2D.h" />
@@ -45,6 +52,7 @@
     <ClInclude Include="src\HEngine\Initializations\Application.h" />
     <ClInclude Include="src\HEngine\Initializations\EntryPoint.h" />
     <ClInclude Include="src\HEngine\Core\UUID.h" />
+    <ClInclude Include="src\HEngine\ECS\System.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

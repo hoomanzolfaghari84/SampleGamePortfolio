@@ -2,12 +2,13 @@
 
 #include "../Core/UUID.h"
 #include <string>
-#include <SFML/Graphics.hpp>
 #include <functional>
 #include "../Utils/HVector2D.h"
 
 
 #include "../Initializations/Core.h"
+#include "Entity.h"
+#include "../Utils/Color.h"
 
 namespace HEngine {
 
@@ -51,70 +52,26 @@ namespace HEngine {
 		}
 	};
 
+	
 	class HENGINE_API UIComponent : public Component {
-		
-		sf::Text text;
-		std::function<void()> onClick;
-
-		bool hovered = false;
-
 	public:
-		sf::RectangleShape shape;
-		UIComponent(const sf::RectangleShape& shape, sf::Font font = sf::Font("arial.ttf"), const sf::Color& color = sf::Color::White)
-			: shape(shape), text(font) {
-			this->shape.setFillColor(color);
-			SetText("Button Text", font);
-		}
-		void SetText(const std::string& str, const sf::Font& font, unsigned int size = 30) {
-			text.setString(str);
-			text.setFont(font);
-			text.setCharacterSize(size);
-			text.setFillColor(sf::Color::Black);
-			text.setPosition(shape.getPosition() + sf::Vector2f(10.f, 10.f)); // Adjust text position
-		}
+		std::string font_path = "arial.ttf";
+		std::string text;
+		float x, y, width, height;
+		HColor color = HColor::White;
+
+		UIComponent(std::string text, float x, float y, float width, float height);
 	};
 
 
 	class HENGINE_API BoxCollisionComponent : public Component {
-		
-		std::function<void()> onCollision;
 	public:
 		BoxCollisionComponent() = default;
-	    BoxCollisionComponent(const sf::FloatRect& bounds, std::function<void()> onCollision = nullptr)
-			: Bounds(bounds), onCollision(onCollision) {
-			}
-		sf::FloatRect Bounds;
+		BoxCollisionComponent(float x, float y, float width, float height);
+
+		float x = 0.0f, y = 0.0f, width = 1.0f, height = 1.0f;
+		std::function<void()> onCollision = nullptr;
 	};
 
-	//struct SpriteRendererComponent : public Component {
-	//	sf::Sprite sprite;
-	//	sf::Texture texture;
 
-	//	SpriteRendererComponent() = default;
-
-	//	SpriteRendererComponent(const std::string& texturePath) {
-	//		if (!texture.loadFromFile(texturePath)) {
-	//			// handle error (log it maybe)
-	//		}
-	//		sprite = sf::Sprite(texture);
-	//	}
-	//};
-
-
-	/*struct CameraComponent : public Component {
-		sf::View view;
-
-		CameraComponent() = default;
-		CameraComponent(const sf::FloatRect& rect)
-			: view(rect) {
-		}
-
-		void SetCenter(const sf::Vector2f& center) {
-			view.setCenter(center);
-		}
-
-		void SetSize(const sf::Vector2f& size) {
-			view.setSize(size);
-		}
-	};*/
 }

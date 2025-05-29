@@ -1,1163 +1,130 @@
-﻿  EntityManager.cpp
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.h(40,53): warning C4251: 'HEngine::EntityManager::m_Entities': 'std::unordered_map<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>' needs to have dll-interface to be used by clients of 'HEngine::EntityManager'
-  (compiling source file 'src/HEngine/ECS/EntityManager.cpp')
+﻿  RenderSystem.cpp
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.h(47,53): warning C4251: 'HEngine::EntityManager::m_Entities': 'std::unordered_map<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>' needs to have dll-interface to be used by clients of 'HEngine::EntityManager'
+  (compiling source file 'src/HEngine/ECS/RenderSystem.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,7):
       see declaration of 'std::unordered_map<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(26,8): warning C4251: 'HEngine::IDComponent::ID': 'HEngine::UUID' needs to have dll-interface to be used by clients of 'HEngine::IDComponent'
-  (compiling source file 'src/HEngine/ECS/EntityManager.cpp')
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\UUID.h(7,8):
-      see declaration of 'HEngine::UUID'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(23,20): error C2143: syntax error: missing ';' before '&'
+  (compiling source file 'src/HEngine/ECS/RenderSystem.cpp')
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(34,15): warning C4251: 'HEngine::TagComponent::Tag': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TagComponent'
-  (compiling source file 'src/HEngine/ECS/EntityManager.cpp')
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(23,3): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'src/HEngine/ECS/RenderSystem.cpp')
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(23,44): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'src/HEngine/ECS/RenderSystem.cpp')
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(30,21): error C3646: 'm_ComponentRegistry': unknown override specifier
+  (compiling source file 'src/HEngine/ECS/RenderSystem.cpp')
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(30,3): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'src/HEngine/ECS/RenderSystem.cpp')
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(56,21): warning C4251: 'HEngine::Entity::m_Name': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::Entity'
+  (compiling source file 'src/HEngine/ECS/RenderSystem.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(44,14): warning C4251: 'HEngine::TransformComponent::translation': 'HEngine::HVector2Df' needs to have dll-interface to be used by clients of 'HEngine::TransformComponent'
-  (compiling source file 'src/HEngine/ECS/EntityManager.cpp')
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(25,8):
-      see declaration of 'HEngine::HVector2Df'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(46,14): warning C4251: 'HEngine::TransformComponent::scale': 'HEngine::HVector2Df' needs to have dll-interface to be used by clients of 'HEngine::TransformComponent'
-  (compiling source file 'src/HEngine/ECS/EntityManager.cpp')
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(25,8):
-      see declaration of 'HEngine::HVector2Df'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(56,12): warning C4251: 'HEngine::UIComponent::text': 'sf::Text' needs to have dll-interface to be used by clients of 'HEngine::UIComponent'
-  (compiling source file 'src/HEngine/ECS/EntityManager.cpp')
-      C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include\SFML\Graphics\Text.hpp(56,25):
-      see declaration of 'sf::Text'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(57,25): warning C4251: 'HEngine::UIComponent::onClick': 'std::function<void (void)>' needs to have dll-interface to be used by clients of 'HEngine::UIComponent'
-  (compiling source file 'src/HEngine/ECS/EntityManager.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\functional(1089,7):
-      see declaration of 'std::function<void (void)>'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(62,22): warning C4251: 'HEngine::UIComponent::shape': 'sf::RectangleShape' needs to have dll-interface to be used by clients of 'HEngine::UIComponent'
-  (compiling source file 'src/HEngine/ECS/EntityManager.cpp')
-      C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include\SFML\Graphics\RectangleShape.hpp(45,25):
-      see declaration of 'sf::RectangleShape'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(80,25): warning C4251: 'HEngine::BoxCollisionComponent::onCollision': 'std::function<void (void)>' needs to have dll-interface to be used by clients of 'HEngine::BoxCollisionComponent'
-  (compiling source file 'src/HEngine/ECS/EntityManager.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\functional(1089,7):
-      see declaration of 'std::function<void (void)>'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(86,17): warning C4251: 'HEngine::BoxCollisionComponent::Bounds': 'sf::Rect<float>' needs to have dll-interface to be used by clients of 'HEngine::BoxCollisionComponent'
-  (compiling source file 'src/HEngine/ECS/EntityManager.cpp')
-      C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include\SFML\Graphics\Rect.hpp(42,7):
-      see declaration of 'sf::Rect<float>'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(62,14): warning C4251: 'HEngine::Entity::m_ID': 'HEngine::UUID' needs to have dll-interface to be used by clients of 'HEngine::Entity'
-  (compiling source file 'src/HEngine/ECS/EntityManager.cpp')
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\UUID.h(7,8):
-      see declaration of 'HEngine::UUID'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(64,21): warning C4251: 'HEngine::Entity::m_Name': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::Entity'
-  (compiling source file 'src/HEngine/ECS/EntityManager.cpp')
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(35,15): warning C4251: 'HEngine::TagComponent::Tag': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TagComponent'
+  (compiling source file 'src/HEngine/ECS/RenderSystem.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\ComponentRegistry.h(83,75): warning C4251: 'HEngine::ComponentRegistry::m_Storages': 'std::unordered_map<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,std::hash<std::type_index>,std::equal_to<std::type_index>,std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>' needs to have dll-interface to be used by clients of 'HEngine::ComponentRegistry'
-  (compiling source file 'src/HEngine/ECS/EntityManager.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,7):
-      see declaration of 'std::unordered_map<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,std::hash<std::type_index>,std::equal_to<std::type_index>,std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(58,15): warning C4251: 'HEngine::UIComponent::font_path': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::UIComponent'
+  (compiling source file 'src/HEngine/ECS/RenderSystem.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47): error C2679: binary '=': no operator found which takes a right-hand operand of type 'const std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>' (or there is no acceptable conversion)
-  (compiling source file 'src/HEngine/ECS/EntityManager.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(333,11):
-      could be 'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(volatile const std::pair<_Kty,_Ty> &)'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(volatile const std::pair<_Kty,_Ty> &)': cannot convert argument 2 from 'const std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>' to 'volatile const std::pair<_Kty,_Ty> &'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(412,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,0>(std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>> &&) noexcept(<expr>)'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,0>(std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>> &&) noexcept(<expr>)': cannot convert argument 2 from 'const std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>' to 'std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>> &&'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,59):
-              Conversion loses qualifiers
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(363,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<std::pair<_Kty,_Ty>,0>(_Myself &&) noexcept(<expr>)'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,
-              _Myself=std::pair<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<std::pair<_Kty,_Ty>,0>(_Myself &&) noexcept(<expr>)': cannot convert argument 2 from 'const std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>' to '_Myself &&'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,
-              _Myself=std::pair<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>
-          ]
-          and
-          [
-              _Myself=std::pair<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,59):
-              Reason: cannot convert from 'const std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>' to '_Myself'
-          with
-          [
-              _Myself=std::pair<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,59):
-              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(387,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(const std::pair<_Other1,_Other2> &) noexcept(<expr>)'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(const std::pair<_Other1,_Other2> &) noexcept(<expr>)': could not deduce template argument for '__formal'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(384,9):
-              'std::enable_if_t<false,int>' : Failed to specialize alias template
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(339,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(_Identity<const _Myself&>::type) noexcept(<expr>)'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(_Identity<const _Myself&>::type) noexcept(<expr>)': could not deduce template argument for '__formal'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(336,9):
-              'std::enable_if_t<false,int>' : Failed to specialize alias template
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-      while trying to match the argument list '(std::pair<_Kty,_Ty>, const std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>)'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-      the template instantiation context (the oldest one first) is
-          C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\ComponentRegistry.h(83,75):
-          see reference to class template instantiation 'std::unordered_map<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,std::hash<std::type_index>,std::equal_to<std::type_index>,std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>' being compiled
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,30):
-          see reference to class template instantiation 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>' being compiled
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,
-              _Hasher=std::hash<std::type_index>,
-              _Keyeq=std::equal_to<std::type_index>,
-              _Alloc=std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xhash(747,12):
-          while compiling class template member function 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>> &std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>::operator =(const std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>> &)'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,
-              _Hasher=std::hash<std::type_index>,
-              _Keyeq=std::equal_to<std::type_index>,
-              _Alloc=std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(244,27):
-              see the first reference to 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>::operator =' in 'std::unordered_map<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,std::hash<std::type_index>,std::equal_to<std::type_index>,std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>::operator ='
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,
-              _Hasher=std::hash<std::type_index>,
-              _Keyeq=std::equal_to<std::type_index>,
-              _Alloc=std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>
-          ]
-              C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\ComponentRegistry.h(98,2):
-              see the first reference to 'std::unordered_map<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,std::hash<std::type_index>,std::equal_to<std::type_index>,std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>::operator =' in 'HEngine::ComponentRegistry::operator ='
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xhash(783,24):
-          see reference to function template instantiation 'void std::list<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>,std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>::_Assign_cast<std::pair<_Kty,_Ty>&,std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>,std::_Iterator_base0>>(_UIter,const _UIter)' being compiled
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,
-              _UIter=std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>,std::_Iterator_base0>
-          ]
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(59,15): warning C4251: 'HEngine::UIComponent::text': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::UIComponent'
+  (compiling source file 'src/HEngine/ECS/RenderSystem.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47): error C2679: binary '=': no operator found which takes a right-hand operand of type 'const std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>' (or there is no acceptable conversion)
-  (compiling source file 'src/HEngine/ECS/EntityManager.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(333,11):
-      could be 'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(volatile const std::pair<_Kty,_Ty> &)'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(volatile const std::pair<_Kty,_Ty> &)': cannot convert argument 2 from 'const std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>' to 'volatile const std::pair<_Kty,_Ty> &'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(412,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,0>(std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>> &&) noexcept(<expr>)'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,0>(std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>> &&) noexcept(<expr>)': cannot convert argument 2 from 'const std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>' to 'std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>> &&'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,59):
-              Conversion loses qualifiers
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(363,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<std::pair<_Kty,_Ty>,0>(_Myself &&) noexcept(<expr>)'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,
-              _Myself=std::pair<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<std::pair<_Kty,_Ty>,0>(_Myself &&) noexcept(<expr>)': cannot convert argument 2 from 'const std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>' to '_Myself &&'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,
-              _Myself=std::pair<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>
-          ]
-          and
-          [
-              _Myself=std::pair<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,59):
-              Reason: cannot convert from 'const std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>' to '_Myself'
-          with
-          [
-              _Myself=std::pair<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,59):
-              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(387,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(const std::pair<_Other1,_Other2> &) noexcept(<expr>)'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(const std::pair<_Other1,_Other2> &) noexcept(<expr>)': could not deduce template argument for '__formal'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(384,9):
-              'std::enable_if_t<false,int>' : Failed to specialize alias template
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(339,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(_Identity<const _Myself&>::type) noexcept(<expr>)'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(_Identity<const _Myself&>::type) noexcept(<expr>)': could not deduce template argument for '__formal'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(336,9):
-              'std::enable_if_t<false,int>' : Failed to specialize alias template
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-      while trying to match the argument list '(std::pair<_Kty,_Ty>, const std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>)'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-      the template instantiation context (the oldest one first) is
-          C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.h(40,53):
-          see reference to class template instantiation 'std::unordered_map<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>' being compiled
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,30):
-          see reference to class template instantiation 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>' being compiled
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,
-              _Hasher=std::hash<HEngine::UUID>,
-              _Keyeq=std::equal_to<HEngine::UUID>,
-              _Alloc=std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xhash(747,12):
-          while compiling class template member function 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>> &std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>::operator =(const std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>> &)'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,
-              _Hasher=std::hash<HEngine::UUID>,
-              _Keyeq=std::equal_to<HEngine::UUID>,
-              _Alloc=std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(244,27):
-              see the first reference to 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>::operator =' in 'std::unordered_map<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>::operator ='
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,
-              _Hasher=std::hash<HEngine::UUID>,
-              _Keyeq=std::equal_to<HEngine::UUID>,
-              _Alloc=std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>
-          ]
-              C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.h(41,2):
-              see the first reference to 'std::unordered_map<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>::operator =' in 'HEngine::EntityManager::operator ='
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xhash(783,24):
-          see reference to function template instantiation 'void std::list<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>::_Assign_cast<std::pair<_Kty,_Ty>&,std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>,std::_Iterator_base0>>(_UIter,const _UIter)' being compiled
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,
-              _UIter=std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>,std::_Iterator_base0>
-          ]
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(73,25): warning C4251: 'HEngine::BoxCollisionComponent::onCollision': 'std::function<void (void)>' needs to have dll-interface to be used by clients of 'HEngine::BoxCollisionComponent'
+  (compiling source file 'src/HEngine/ECS/RenderSystem.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\functional(1089,7):
+      see declaration of 'std::function<void (void)>'
   
   Scene.cpp
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.h(40,53): warning C4251: 'HEngine::EntityManager::m_Entities': 'std::unordered_map<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>' needs to have dll-interface to be used by clients of 'HEngine::EntityManager'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.h(47,53): warning C4251: 'HEngine::EntityManager::m_Entities': 'std::unordered_map<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>' needs to have dll-interface to be used by clients of 'HEngine::EntityManager'
   (compiling source file 'src/HEngine/ECS/Scene.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,7):
       see declaration of 'std::unordered_map<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\ComponentRegistry.h(83,75): warning C4251: 'HEngine::ComponentRegistry::m_Storages': 'std::unordered_map<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,std::hash<std::type_index>,std::equal_to<std::type_index>,std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>' needs to have dll-interface to be used by clients of 'HEngine::ComponentRegistry'
-  (compiling source file 'src/HEngine/ECS/Scene.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,7):
-      see declaration of 'std::unordered_map<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,std::hash<std::type_index>,std::equal_to<std::type_index>,std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(26,8): warning C4251: 'HEngine::IDComponent::ID': 'HEngine::UUID' needs to have dll-interface to be used by clients of 'HEngine::IDComponent'
-  (compiling source file 'src/HEngine/ECS/Scene.cpp')
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\UUID.h(7,8):
-      see declaration of 'HEngine::UUID'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(34,15): warning C4251: 'HEngine::TagComponent::Tag': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TagComponent'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(56,21): warning C4251: 'HEngine::Entity::m_Name': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::Entity'
   (compiling source file 'src/HEngine/ECS/Scene.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(44,14): warning C4251: 'HEngine::TransformComponent::translation': 'HEngine::HVector2Df' needs to have dll-interface to be used by clients of 'HEngine::TransformComponent'
-  (compiling source file 'src/HEngine/ECS/Scene.cpp')
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(25,8):
-      see declaration of 'HEngine::HVector2Df'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(46,14): warning C4251: 'HEngine::TransformComponent::scale': 'HEngine::HVector2Df' needs to have dll-interface to be used by clients of 'HEngine::TransformComponent'
-  (compiling source file 'src/HEngine/ECS/Scene.cpp')
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(25,8):
-      see declaration of 'HEngine::HVector2Df'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(56,12): warning C4251: 'HEngine::UIComponent::text': 'sf::Text' needs to have dll-interface to be used by clients of 'HEngine::UIComponent'
-  (compiling source file 'src/HEngine/ECS/Scene.cpp')
-      C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include\SFML\Graphics\Text.hpp(56,25):
-      see declaration of 'sf::Text'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(57,25): warning C4251: 'HEngine::UIComponent::onClick': 'std::function<void (void)>' needs to have dll-interface to be used by clients of 'HEngine::UIComponent'
-  (compiling source file 'src/HEngine/ECS/Scene.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\functional(1089,7):
-      see declaration of 'std::function<void (void)>'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(62,22): warning C4251: 'HEngine::UIComponent::shape': 'sf::RectangleShape' needs to have dll-interface to be used by clients of 'HEngine::UIComponent'
-  (compiling source file 'src/HEngine/ECS/Scene.cpp')
-      C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include\SFML\Graphics\RectangleShape.hpp(45,25):
-      see declaration of 'sf::RectangleShape'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(80,25): warning C4251: 'HEngine::BoxCollisionComponent::onCollision': 'std::function<void (void)>' needs to have dll-interface to be used by clients of 'HEngine::BoxCollisionComponent'
-  (compiling source file 'src/HEngine/ECS/Scene.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\functional(1089,7):
-      see declaration of 'std::function<void (void)>'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(86,17): warning C4251: 'HEngine::BoxCollisionComponent::Bounds': 'sf::Rect<float>' needs to have dll-interface to be used by clients of 'HEngine::BoxCollisionComponent'
-  (compiling source file 'src/HEngine/ECS/Scene.cpp')
-      C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include\SFML\Graphics\Rect.hpp(42,7):
-      see declaration of 'sf::Rect<float>'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(62,14): warning C4251: 'HEngine::Entity::m_ID': 'HEngine::UUID' needs to have dll-interface to be used by clients of 'HEngine::Entity'
-  (compiling source file 'src/HEngine/ECS/Scene.cpp')
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\UUID.h(7,8):
-      see declaration of 'HEngine::UUID'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(64,21): warning C4251: 'HEngine::Entity::m_Name': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::Entity'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(35,15): warning C4251: 'HEngine::TagComponent::Tag': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TagComponent'
   (compiling source file 'src/HEngine/ECS/Scene.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47): error C2679: binary '=': no operator found which takes a right-hand operand of type 'const std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>' (or there is no acceptable conversion)
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(58,15): warning C4251: 'HEngine::UIComponent::font_path': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::UIComponent'
   (compiling source file 'src/HEngine/ECS/Scene.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(333,11):
-      could be 'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(volatile const std::pair<_Kty,_Ty> &)'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(volatile const std::pair<_Kty,_Ty> &)': cannot convert argument 2 from 'const std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>' to 'volatile const std::pair<_Kty,_Ty> &'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(412,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,0>(std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>> &&) noexcept(<expr>)'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,0>(std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>> &&) noexcept(<expr>)': cannot convert argument 2 from 'const std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>' to 'std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>> &&'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,59):
-              Conversion loses qualifiers
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(363,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<std::pair<_Kty,_Ty>,0>(_Myself &&) noexcept(<expr>)'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,
-              _Myself=std::pair<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<std::pair<_Kty,_Ty>,0>(_Myself &&) noexcept(<expr>)': cannot convert argument 2 from 'const std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>' to '_Myself &&'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,
-              _Myself=std::pair<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>
-          ]
-          and
-          [
-              _Myself=std::pair<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,59):
-              Reason: cannot convert from 'const std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>' to '_Myself'
-          with
-          [
-              _Myself=std::pair<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,59):
-              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(387,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(const std::pair<_Other1,_Other2> &) noexcept(<expr>)'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(const std::pair<_Other1,_Other2> &) noexcept(<expr>)': could not deduce template argument for '__formal'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(384,9):
-              'std::enable_if_t<false,int>' : Failed to specialize alias template
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(339,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(_Identity<const _Myself&>::type) noexcept(<expr>)'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(_Identity<const _Myself&>::type) noexcept(<expr>)': could not deduce template argument for '__formal'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(336,9):
-              'std::enable_if_t<false,int>' : Failed to specialize alias template
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-      while trying to match the argument list '(std::pair<_Kty,_Ty>, const std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>)'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-      the template instantiation context (the oldest one first) is
-          C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\ComponentRegistry.h(83,75):
-          see reference to class template instantiation 'std::unordered_map<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,std::hash<std::type_index>,std::equal_to<std::type_index>,std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>' being compiled
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,30):
-          see reference to class template instantiation 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>' being compiled
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,
-              _Hasher=std::hash<std::type_index>,
-              _Keyeq=std::equal_to<std::type_index>,
-              _Alloc=std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xhash(747,12):
-          while compiling class template member function 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>> &std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>::operator =(const std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>> &)'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,
-              _Hasher=std::hash<std::type_index>,
-              _Keyeq=std::equal_to<std::type_index>,
-              _Alloc=std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(244,27):
-              see the first reference to 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>::operator =' in 'std::unordered_map<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,std::hash<std::type_index>,std::equal_to<std::type_index>,std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>::operator ='
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,
-              _Hasher=std::hash<std::type_index>,
-              _Keyeq=std::equal_to<std::type_index>,
-              _Alloc=std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>
-          ]
-              C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\ComponentRegistry.h(98,2):
-              see the first reference to 'std::unordered_map<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,std::hash<std::type_index>,std::equal_to<std::type_index>,std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>::operator =' in 'HEngine::ComponentRegistry::operator ='
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xhash(783,24):
-          see reference to function template instantiation 'void std::list<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>,std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>::_Assign_cast<std::pair<_Kty,_Ty>&,std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>,std::_Iterator_base0>>(_UIter,const _UIter)' being compiled
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,
-              _UIter=std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>,std::_Iterator_base0>
-          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47): error C2679: binary '=': no operator found which takes a right-hand operand of type 'const std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>' (or there is no acceptable conversion)
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(59,15): warning C4251: 'HEngine::UIComponent::text': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::UIComponent'
   (compiling source file 'src/HEngine/ECS/Scene.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(333,11):
-      could be 'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(volatile const std::pair<_Kty,_Ty> &)'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(volatile const std::pair<_Kty,_Ty> &)': cannot convert argument 2 from 'const std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>' to 'volatile const std::pair<_Kty,_Ty> &'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(412,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,0>(std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>> &&) noexcept(<expr>)'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,0>(std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>> &&) noexcept(<expr>)': cannot convert argument 2 from 'const std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>' to 'std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>> &&'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,59):
-              Conversion loses qualifiers
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(363,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<std::pair<_Kty,_Ty>,0>(_Myself &&) noexcept(<expr>)'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,
-              _Myself=std::pair<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<std::pair<_Kty,_Ty>,0>(_Myself &&) noexcept(<expr>)': cannot convert argument 2 from 'const std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>' to '_Myself &&'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,
-              _Myself=std::pair<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>
-          ]
-          and
-          [
-              _Myself=std::pair<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,59):
-              Reason: cannot convert from 'const std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>' to '_Myself'
-          with
-          [
-              _Myself=std::pair<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,59):
-              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(387,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(const std::pair<_Other1,_Other2> &) noexcept(<expr>)'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(const std::pair<_Other1,_Other2> &) noexcept(<expr>)': could not deduce template argument for '__formal'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(384,9):
-              'std::enable_if_t<false,int>' : Failed to specialize alias template
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(339,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(_Identity<const _Myself&>::type) noexcept(<expr>)'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(_Identity<const _Myself&>::type) noexcept(<expr>)': could not deduce template argument for '__formal'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(336,9):
-              'std::enable_if_t<false,int>' : Failed to specialize alias template
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-      while trying to match the argument list '(std::pair<_Kty,_Ty>, const std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>)'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-      the template instantiation context (the oldest one first) is
-          C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.h(40,53):
-          see reference to class template instantiation 'std::unordered_map<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>' being compiled
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,30):
-          see reference to class template instantiation 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>' being compiled
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,
-              _Hasher=std::hash<HEngine::UUID>,
-              _Keyeq=std::equal_to<HEngine::UUID>,
-              _Alloc=std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xhash(747,12):
-          while compiling class template member function 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>> &std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>::operator =(const std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>> &)'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,
-              _Hasher=std::hash<HEngine::UUID>,
-              _Keyeq=std::equal_to<HEngine::UUID>,
-              _Alloc=std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(244,27):
-              see the first reference to 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>::operator =' in 'std::unordered_map<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>::operator ='
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,
-              _Hasher=std::hash<HEngine::UUID>,
-              _Keyeq=std::equal_to<HEngine::UUID>,
-              _Alloc=std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>
-          ]
-              C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.h(41,2):
-              see the first reference to 'std::unordered_map<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>::operator =' in 'HEngine::EntityManager::operator ='
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xhash(783,24):
-          see reference to function template instantiation 'void std::list<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>::_Assign_cast<std::pair<_Kty,_Ty>&,std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>,std::_Iterator_base0>>(_UIter,const _UIter)' being compiled
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,
-              _UIter=std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>,std::_Iterator_base0>
-          ]
-  
-  Entity.cpp
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(26,8): warning C4251: 'HEngine::IDComponent::ID': 'HEngine::UUID' needs to have dll-interface to be used by clients of 'HEngine::IDComponent'
-  (compiling source file 'src/HEngine/ECS/Entity.cpp')
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\UUID.h(7,8):
-      see declaration of 'HEngine::UUID'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(34,15): warning C4251: 'HEngine::TagComponent::Tag': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TagComponent'
-  (compiling source file 'src/HEngine/ECS/Entity.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(44,14): warning C4251: 'HEngine::TransformComponent::translation': 'HEngine::HVector2Df' needs to have dll-interface to be used by clients of 'HEngine::TransformComponent'
-  (compiling source file 'src/HEngine/ECS/Entity.cpp')
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(25,8):
-      see declaration of 'HEngine::HVector2Df'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(46,14): warning C4251: 'HEngine::TransformComponent::scale': 'HEngine::HVector2Df' needs to have dll-interface to be used by clients of 'HEngine::TransformComponent'
-  (compiling source file 'src/HEngine/ECS/Entity.cpp')
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(25,8):
-      see declaration of 'HEngine::HVector2Df'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(56,12): warning C4251: 'HEngine::UIComponent::text': 'sf::Text' needs to have dll-interface to be used by clients of 'HEngine::UIComponent'
-  (compiling source file 'src/HEngine/ECS/Entity.cpp')
-      C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include\SFML\Graphics\Text.hpp(56,25):
-      see declaration of 'sf::Text'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(57,25): warning C4251: 'HEngine::UIComponent::onClick': 'std::function<void (void)>' needs to have dll-interface to be used by clients of 'HEngine::UIComponent'
-  (compiling source file 'src/HEngine/ECS/Entity.cpp')
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(73,25): warning C4251: 'HEngine::BoxCollisionComponent::onCollision': 'std::function<void (void)>' needs to have dll-interface to be used by clients of 'HEngine::BoxCollisionComponent'
+  (compiling source file 'src/HEngine/ECS/Scene.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\functional(1089,7):
       see declaration of 'std::function<void (void)>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(62,22): warning C4251: 'HEngine::UIComponent::shape': 'sf::RectangleShape' needs to have dll-interface to be used by clients of 'HEngine::UIComponent'
-  (compiling source file 'src/HEngine/ECS/Entity.cpp')
-      C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include\SFML\Graphics\RectangleShape.hpp(45,25):
-      see declaration of 'sf::RectangleShape'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(30,21): warning C4251: 'HEngine::Scene::m_ComponentRegistry': 'HEngine::ComponentRegistry' needs to have dll-interface to be used by clients of 'HEngine::Scene'
+  (compiling source file 'src/HEngine/ECS/Scene.cpp')
+      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\ComponentRegistry.h(47,8):
+      see declaration of 'HEngine::ComponentRegistry'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(80,25): warning C4251: 'HEngine::BoxCollisionComponent::onCollision': 'std::function<void (void)>' needs to have dll-interface to be used by clients of 'HEngine::BoxCollisionComponent'
-  (compiling source file 'src/HEngine/ECS/Entity.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\functional(1089,7):
-      see declaration of 'std::function<void (void)>'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(86,17): warning C4251: 'HEngine::BoxCollisionComponent::Bounds': 'sf::Rect<float>' needs to have dll-interface to be used by clients of 'HEngine::BoxCollisionComponent'
-  (compiling source file 'src/HEngine/ECS/Entity.cpp')
-      C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include\SFML\Graphics\Rect.hpp(42,7):
-      see declaration of 'sf::Rect<float>'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(62,14): warning C4251: 'HEngine::Entity::m_ID': 'HEngine::UUID' needs to have dll-interface to be used by clients of 'HEngine::Entity'
-  (compiling source file 'src/HEngine/ECS/Entity.cpp')
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\UUID.h(7,8):
-      see declaration of 'HEngine::UUID'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(64,21): warning C4251: 'HEngine::Entity::m_Name': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::Entity'
-  (compiling source file 'src/HEngine/ECS/Entity.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(6,49): error C3878: syntax error: unexpected token '>' following 'simple-type-specifier'
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(6,49):
-      missing one of: '(' '{' ?
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(56,12):
-      This diagnostic occurred in the compiler generated function 'T *HEngine::Entity::GetComponent(void)'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(6,49): error C3878: syntax error: unexpected token '>' following 'expression'
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(56,12):
-      This diagnostic occurred in the compiler generated function 'T *HEngine::Entity::GetComponent(void)'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(6,55): error C2760: syntax error: ')' was unexpected here; expected ';'
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(56,12):
-      This diagnostic occurred in the compiler generated function 'T *HEngine::Entity::GetComponent(void)'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(6,55): error C3878: syntax error: unexpected token ')' following 'jump-statement'
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(56,12):
-      This diagnostic occurred in the compiler generated function 'T *HEngine::Entity::GetComponent(void)'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(11,42): error C3878: syntax error: unexpected token '>' following 'simple-type-specifier'
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(11,42):
-      missing one of: '(' '{' ?
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(59,14):
-      This diagnostic occurred in the compiler generated function 'void HEngine::Entity::AddComponent(T)'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(11,42): error C3878: syntax error: unexpected token '>' following 'expression'
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(59,14):
-      This diagnostic occurred in the compiler generated function 'void HEngine::Entity::AddComponent(T)'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(11,48): error C2760: syntax error: ',' was unexpected here; expected ';'
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(59,14):
-      This diagnostic occurred in the compiler generated function 'void HEngine::Entity::AddComponent(T)'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(11,48): error C3878: syntax error: unexpected token ',' following 'expression-statement'
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(59,14):
-      This diagnostic occurred in the compiler generated function 'void HEngine::Entity::AddComponent(T)'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(11,70): error C2760: syntax error: ')' was unexpected here; expected ';'
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(59,14):
-      This diagnostic occurred in the compiler generated function 'void HEngine::Entity::AddComponent(T)'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.cpp(11,70): error C3878: syntax error: unexpected token ')' following 'expression-statement'
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(59,14):
-      This diagnostic occurred in the compiler generated function 'void HEngine::Entity::AddComponent(T)'
-  
-  GameEngine.cpp
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(26,8): warning C4251: 'HEngine::IDComponent::ID': 'HEngine::UUID' needs to have dll-interface to be used by clients of 'HEngine::IDComponent'
-  (compiling source file 'src/HEngine/Core/GameEngine.cpp')
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\UUID.h(7,8):
-      see declaration of 'HEngine::UUID'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(34,15): warning C4251: 'HEngine::TagComponent::Tag': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TagComponent'
-  (compiling source file 'src/HEngine/Core/GameEngine.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(44,14): warning C4251: 'HEngine::TransformComponent::translation': 'HEngine::HVector2Df' needs to have dll-interface to be used by clients of 'HEngine::TransformComponent'
-  (compiling source file 'src/HEngine/Core/GameEngine.cpp')
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(25,8):
-      see declaration of 'HEngine::HVector2Df'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(46,14): warning C4251: 'HEngine::TransformComponent::scale': 'HEngine::HVector2Df' needs to have dll-interface to be used by clients of 'HEngine::TransformComponent'
-  (compiling source file 'src/HEngine/Core/GameEngine.cpp')
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(25,8):
-      see declaration of 'HEngine::HVector2Df'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(56,12): warning C4251: 'HEngine::UIComponent::text': 'sf::Text' needs to have dll-interface to be used by clients of 'HEngine::UIComponent'
-  (compiling source file 'src/HEngine/Core/GameEngine.cpp')
-      C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include\SFML\Graphics\Text.hpp(56,25):
-      see declaration of 'sf::Text'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(57,25): warning C4251: 'HEngine::UIComponent::onClick': 'std::function<void (void)>' needs to have dll-interface to be used by clients of 'HEngine::UIComponent'
-  (compiling source file 'src/HEngine/Core/GameEngine.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\functional(1089,7):
-      see declaration of 'std::function<void (void)>'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(62,22): warning C4251: 'HEngine::UIComponent::shape': 'sf::RectangleShape' needs to have dll-interface to be used by clients of 'HEngine::UIComponent'
-  (compiling source file 'src/HEngine/Core/GameEngine.cpp')
-      C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include\SFML\Graphics\RectangleShape.hpp(45,25):
-      see declaration of 'sf::RectangleShape'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(80,25): warning C4251: 'HEngine::BoxCollisionComponent::onCollision': 'std::function<void (void)>' needs to have dll-interface to be used by clients of 'HEngine::BoxCollisionComponent'
-  (compiling source file 'src/HEngine/Core/GameEngine.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\functional(1089,7):
-      see declaration of 'std::function<void (void)>'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(86,17): warning C4251: 'HEngine::BoxCollisionComponent::Bounds': 'sf::Rect<float>' needs to have dll-interface to be used by clients of 'HEngine::BoxCollisionComponent'
-  (compiling source file 'src/HEngine/Core/GameEngine.cpp')
-      C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include\SFML\Graphics\Rect.hpp(42,7):
-      see declaration of 'sf::Rect<float>'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(62,14): warning C4251: 'HEngine::Entity::m_ID': 'HEngine::UUID' needs to have dll-interface to be used by clients of 'HEngine::Entity'
-  (compiling source file 'src/HEngine/Core/GameEngine.cpp')
-      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\UUID.h(7,8):
-      see declaration of 'HEngine::UUID'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(64,21): warning C4251: 'HEngine::Entity::m_Name': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::Entity'
-  (compiling source file 'src/HEngine/Core/GameEngine.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.h(40,53): warning C4251: 'HEngine::EntityManager::m_Entities': 'std::unordered_map<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>' needs to have dll-interface to be used by clients of 'HEngine::EntityManager'
-  (compiling source file 'src/HEngine/Core/GameEngine.cpp')
+  Core.h
+  System.cpp
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.h(47,53): warning C4251: 'HEngine::EntityManager::m_Entities': 'std::unordered_map<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>' needs to have dll-interface to be used by clients of 'HEngine::EntityManager'
+  (compiling source file 'src/HEngine/ECS/System.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,7):
       see declaration of 'std::unordered_map<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\ComponentRegistry.h(83,75): warning C4251: 'HEngine::ComponentRegistry::m_Storages': 'std::unordered_map<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,std::hash<std::type_index>,std::equal_to<std::type_index>,std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>' needs to have dll-interface to be used by clients of 'HEngine::ComponentRegistry'
-  (compiling source file 'src/HEngine/Core/GameEngine.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,7):
-      see declaration of 'std::unordered_map<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,std::hash<std::type_index>,std::equal_to<std::type_index>,std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(23,20): error C2143: syntax error: missing ';' before '&'
+  (compiling source file 'src/HEngine/ECS/System.cpp')
   
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47): error C2679: binary '=': no operator found which takes a right-hand operand of type 'const std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>' (or there is no acceptable conversion)
-  (compiling source file 'src/HEngine/Core/GameEngine.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(333,11):
-      could be 'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(volatile const std::pair<_Kty,_Ty> &)'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(volatile const std::pair<_Kty,_Ty> &)': cannot convert argument 2 from 'const std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>' to 'volatile const std::pair<_Kty,_Ty> &'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(412,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,0>(std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>> &&) noexcept(<expr>)'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,0>(std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>> &&) noexcept(<expr>)': cannot convert argument 2 from 'const std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>' to 'std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>> &&'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,59):
-              Conversion loses qualifiers
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(363,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<std::pair<_Kty,_Ty>,0>(_Myself &&) noexcept(<expr>)'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,
-              _Myself=std::pair<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<std::pair<_Kty,_Ty>,0>(_Myself &&) noexcept(<expr>)': cannot convert argument 2 from 'const std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>' to '_Myself &&'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,
-              _Myself=std::pair<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>
-          ]
-          and
-          [
-              _Myself=std::pair<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,59):
-              Reason: cannot convert from 'const std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>' to '_Myself'
-          with
-          [
-              _Myself=std::pair<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,59):
-              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(387,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(const std::pair<_Other1,_Other2> &) noexcept(<expr>)'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(const std::pair<_Other1,_Other2> &) noexcept(<expr>)': could not deduce template argument for '__formal'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(384,9):
-              'std::enable_if_t<false,int>' : Failed to specialize alias template
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(339,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(_Identity<const _Myself&>::type) noexcept(<expr>)'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(_Identity<const _Myself&>::type) noexcept(<expr>)': could not deduce template argument for '__formal'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(336,9):
-              'std::enable_if_t<false,int>' : Failed to specialize alias template
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-      while trying to match the argument list '(std::pair<_Kty,_Ty>, const std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>)'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>
-          ]
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-      the template instantiation context (the oldest one first) is
-          C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\ComponentRegistry.h(83,75):
-          see reference to class template instantiation 'std::unordered_map<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,std::hash<std::type_index>,std::equal_to<std::type_index>,std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>' being compiled
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,30):
-          see reference to class template instantiation 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>' being compiled
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,
-              _Hasher=std::hash<std::type_index>,
-              _Keyeq=std::equal_to<std::type_index>,
-              _Alloc=std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xhash(747,12):
-          while compiling class template member function 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>> &std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>::operator =(const std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>> &)'
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,
-              _Hasher=std::hash<std::type_index>,
-              _Keyeq=std::equal_to<std::type_index>,
-              _Alloc=std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(244,27):
-              see the first reference to 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>::operator =' in 'std::unordered_map<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,std::hash<std::type_index>,std::equal_to<std::type_index>,std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>::operator ='
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,
-              _Hasher=std::hash<std::type_index>,
-              _Keyeq=std::equal_to<std::type_index>,
-              _Alloc=std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>
-          ]
-              C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\ComponentRegistry.h(98,2):
-              see the first reference to 'std::unordered_map<std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,std::hash<std::type_index>,std::equal_to<std::type_index>,std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>::operator =' in 'HEngine::ComponentRegistry::operator ='
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xhash(783,24):
-          see reference to function template instantiation 'void std::list<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>,std::allocator<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>::_Assign_cast<std::pair<_Kty,_Ty>&,std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>,std::_Iterator_base0>>(_UIter,const _UIter)' being compiled
-          with
-          [
-              _Kty=std::type_index,
-              _Ty=std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>,
-              _UIter=std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<std::pair<const std::type_index,std::unique_ptr<HEngine::IComponentStorage,std::default_delete<HEngine::IComponentStorage>>>>>,std::_Iterator_base0>
-          ]
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(23,3): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'src/HEngine/ECS/System.cpp')
   
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47): error C2679: binary '=': no operator found which takes a right-hand operand of type 'const std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>' (or there is no acceptable conversion)
-  (compiling source file 'src/HEngine/Core/GameEngine.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(333,11):
-      could be 'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(volatile const std::pair<_Kty,_Ty> &)'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(volatile const std::pair<_Kty,_Ty> &)': cannot convert argument 2 from 'const std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>' to 'volatile const std::pair<_Kty,_Ty> &'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(412,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,0>(std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>> &&) noexcept(<expr>)'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,0>(std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>> &&) noexcept(<expr>)': cannot convert argument 2 from 'const std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>' to 'std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>> &&'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,59):
-              Conversion loses qualifiers
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(363,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<std::pair<_Kty,_Ty>,0>(_Myself &&) noexcept(<expr>)'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,
-              _Myself=std::pair<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =<std::pair<_Kty,_Ty>,0>(_Myself &&) noexcept(<expr>)': cannot convert argument 2 from 'const std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>' to '_Myself &&'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,
-              _Myself=std::pair<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>
-          ]
-          and
-          [
-              _Myself=std::pair<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,59):
-              Reason: cannot convert from 'const std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>' to '_Myself'
-          with
-          [
-              _Myself=std::pair<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,59):
-              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(387,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(const std::pair<_Other1,_Other2> &) noexcept(<expr>)'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(const std::pair<_Other1,_Other2> &) noexcept(<expr>)': could not deduce template argument for '__formal'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(384,9):
-              'std::enable_if_t<false,int>' : Failed to specialize alias template
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(339,24):
-      or       'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(_Identity<const _Myself&>::type) noexcept(<expr>)'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-          'std::pair<_Kty,_Ty> &std::pair<_Kty,_Ty>::operator =(_Identity<const _Myself&>::type) noexcept(<expr>)': could not deduce template argument for '__formal'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(336,9):
-              'std::enable_if_t<false,int>' : Failed to specialize alias template
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-      while trying to match the argument list '(std::pair<_Kty,_Ty>, const std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>)'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>
-          ]
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list(1315,47):
-      the template instantiation context (the oldest one first) is
-          C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.h(40,53):
-          see reference to class template instantiation 'std::unordered_map<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>' being compiled
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,30):
-          see reference to class template instantiation 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>' being compiled
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,
-              _Hasher=std::hash<HEngine::UUID>,
-              _Keyeq=std::equal_to<HEngine::UUID>,
-              _Alloc=std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xhash(747,12):
-          while compiling class template member function 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>> &std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>::operator =(const std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>> &)'
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,
-              _Hasher=std::hash<HEngine::UUID>,
-              _Keyeq=std::equal_to<HEngine::UUID>,
-              _Alloc=std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(244,27):
-              see the first reference to 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>::operator =' in 'std::unordered_map<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>::operator ='
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,
-              _Hasher=std::hash<HEngine::UUID>,
-              _Keyeq=std::equal_to<HEngine::UUID>,
-              _Alloc=std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>
-          ]
-              C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\EntityManager.h(41,2):
-              see the first reference to 'std::unordered_map<HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,std::hash<HEngine::UUID>,std::equal_to<HEngine::UUID>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>::operator =' in 'HEngine::EntityManager::operator ='
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xhash(783,24):
-          see reference to function template instantiation 'void std::list<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>,std::allocator<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>::_Assign_cast<std::pair<_Kty,_Ty>&,std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>,std::_Iterator_base0>>(_UIter,const _UIter)' being compiled
-          with
-          [
-              _Kty=HEngine::UUID,
-              _Ty=std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>,
-              _UIter=std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<std::pair<const HEngine::UUID,std::unique_ptr<HEngine::Entity,std::default_delete<HEngine::Entity>>>>>,std::_Iterator_base0>
-          ]
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(23,44): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'src/HEngine/ECS/System.cpp')
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(30,21): error C3646: 'm_ComponentRegistry': unknown override specifier
+  (compiling source file 'src/HEngine/ECS/System.cpp')
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(30,3): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'src/HEngine/ECS/System.cpp')
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Entity.h(56,21): warning C4251: 'HEngine::Entity::m_Name': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::Entity'
+  (compiling source file 'src/HEngine/ECS/System.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(35,15): warning C4251: 'HEngine::TagComponent::Tag': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TagComponent'
+  (compiling source file 'src/HEngine/ECS/System.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(58,15): warning C4251: 'HEngine::UIComponent::font_path': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::UIComponent'
+  (compiling source file 'src/HEngine/ECS/System.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(59,15): warning C4251: 'HEngine::UIComponent::text': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::UIComponent'
+  (compiling source file 'src/HEngine/ECS/System.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(73,25): warning C4251: 'HEngine::BoxCollisionComponent::onCollision': 'std::function<void (void)>' needs to have dll-interface to be used by clients of 'HEngine::BoxCollisionComponent'
+  (compiling source file 'src/HEngine/ECS/System.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\functional(1089,7):
+      see declaration of 'std::function<void (void)>'
   
   Generating Code...

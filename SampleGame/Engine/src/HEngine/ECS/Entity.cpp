@@ -1,15 +1,9 @@
 #include "Entity.h"
 
 
-template<typename T>
-T* HEngine::Entity::GetComponent() {
-    return m_Scene->GetComponentRegistry().Get<T>(m_ID);
-}
 
-template<typename T>
-void HEngine::Entity::AddComponent(T component) {
-    m_Scene->GetComponentRegistry().Add<T>(m_ID, std::move(component));
-}
+
+
 
 
 //template<typename T, typename ...Args>

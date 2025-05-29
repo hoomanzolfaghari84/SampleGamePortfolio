@@ -141,6 +141,9 @@
   <ItemGroup>
     <ClInclude Include="src\MenuScene\MenuScene.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\..\..\..\..\personal projects\cpp-training\library-setup-training\WindowKill\resources\arial.ttf" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

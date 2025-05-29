@@ -9,9 +9,11 @@ int main(int argc, char** argv)
 	HEngine::HLogger::Init();
 	HE_CORE_WARN("Initialized Log!");
 	int a = 5;
-	HE_INFO("Hello! Var={0}", a);
+	HE_CORE_INFO("Created App");
 	auto app = HEngine::CreateApplication();
+	HE_CORE_INFO("Created App");
 	app->Run();
+	HE_CORE_INFO("Exited App Run");
 	delete app;
 }
 

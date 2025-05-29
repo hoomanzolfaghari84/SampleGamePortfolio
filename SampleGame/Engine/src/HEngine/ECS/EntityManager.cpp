@@ -46,6 +46,11 @@ namespace HEngine {
 			func(*e);
 	}
 
+	void EntityManager::ForEach(const std::function<void(const UUID&,Entity&)>& func) {
+		for (auto& [id, e] : m_Entities)
+			func(id, *e);
+	}
+
 	void EntityManager::ForEach(const std::function<void(const Entity&)>& func) const {
 		for (const auto& [id, e] : m_Entities)
 			func(*e);

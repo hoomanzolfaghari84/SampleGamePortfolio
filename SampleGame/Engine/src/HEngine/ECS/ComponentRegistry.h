@@ -5,8 +5,11 @@
 #include <typeindex>
 #include <memory>
 #include <cassert>
+#include <optional>
 
 #include "../Initializations/Core.h"
+#include "Component.h"
+#include "Entity.h"
 
 namespace HEngine {
 
@@ -20,7 +23,8 @@ namespace HEngine {
 	class ComponentStorage : public IComponentStorage {
 	public:
 		void Add(UUID id, T component) {
-			m_Components[id] = std::move(component);
+			//m_Components[id] = std::move(component);
+			m_Components.insert_or_assign(id, std::move(component));
 		}
 
 		void Remove(UUID id) override {
@@ -40,10 +44,14 @@ namespace HEngine {
 		std::unordered_map<UUID, T> m_Components;
 	};
 
-	class HENGINE_API ComponentRegistry {
+	class ComponentRegistry {
 	public:
+
+		ComponentRegistry() = default;
+
 		template<typename T>
 		void Add(UUID id, T component) {
+			static_assert(std::is_move_constructible_v<T>, "Component must be move-constructible");
 			GetOrCreateStorage<T>()->Add(id, std::move(component));
 		}
 
@@ -57,6 +65,11 @@ namespace HEngine {
 			auto* storage = GetStorage<T>();
 			return storage ? storage->Get(id) : nullptr;
 		}
+		
+		/*std::optional<std::reference_wrapper<T>> Get(UUID id) {
+			auto* storage = GetStorage<T>();
+			return storage ? std::optional<std::reference_wrapper<T>>(*storage->Get(id)) : std::nullopt;
+		}*/
 
 		template<typename T>
 		bool Has(UUID id) {
@@ -70,17 +83,28 @@ namespace HEngine {
 		}
 
 
-		//// Prevent copy
-		//ComponentRegistry(const ComponentRegistry&) = delete;
-		//ComponentRegistry& operator=(const ComponentRegistry&) = delete;
+		// Prevent copy
+		ComponentRegistry(const ComponentRegistry&) = delete;
+		ComponentRegistry& operator=(const ComponentRegistry&) = delete;
 
-		//// Allow move
-		//ComponentRegistry(ComponentRegistry&&) noexcept = default;
-		//ComponentRegistry& operator=(ComponentRegistry&&) noexcept = default;
+		// Allow move
+		ComponentRegistry(ComponentRegistry&&) noexcept = default;
+		ComponentRegistry& operator=(ComponentRegistry&&) noexcept = default;
 
 
 	private:
 		std::unordered_map<std::type_index, std::unique_ptr<IComponentStorage>> m_Storages;
+
+		/*std::mutex m_Mutex;
+		template<typename T>
+		ComponentStorage<T>* GetOrCreateStorage() {
+			std::lock_guard<std::mutex> lock(m_Mutex);
+			auto index = std::type_index(typeid(T));
+			if (m_Storages.find(index) == m_Storages.end())
+				m_Storages[index] = std::make_unique<ComponentStorage<T>>();
+			return static_cast<ComponentStorage<T>*>(m_Storages[index].get());
+		}*/
+
 
 		template<typename T>
 		ComponentStorage<T>* GetOrCreateStorage() {

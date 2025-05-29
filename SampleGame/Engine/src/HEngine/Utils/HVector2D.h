@@ -1,8 +1,10 @@
 #pragma once
 
+#include "../Initializations/Core.h"
+
 namespace HEngine {
 
-	class HVector2Di {
+	class HENGINE_API HVector2Di {
 	public:
 		const int x, y;
 
@@ -22,7 +24,7 @@ namespace HEngine {
 		
 	};
 
-	class HVector2Df {
+	class HENGINE_API HVector2Df {
 	public:
 		const float x, y;
 

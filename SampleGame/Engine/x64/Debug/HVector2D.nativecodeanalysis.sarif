@@ -1,0 +1,51 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "MSVC Code Analysis",
+          "version": "14.44.35207.1",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/utils/hvector2d.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "a82f3e1928f4a01886b9143534f4f147ca75f6dbd117b6627e5f3b7ea549faab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/utils/hvector2d.h"
+          },
+          "hashes": {
+            "sha-256": "7ba877fa3554f5d56df762d284f939300b87a63441922cdb114be236d2d31525"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/initializations/core.h"
+          },
+          "hashes": {
+            "sha-256": "fe18b6087c63090e8117f5bf7a680f7231e1f076e64c07b2ed9ff1f1bf10339e"
+          }
+        }
+      ]
+    }
+  ]
+}

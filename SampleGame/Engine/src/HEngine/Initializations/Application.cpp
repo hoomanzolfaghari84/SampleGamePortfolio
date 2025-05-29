@@ -5,6 +5,7 @@
 namespace HEngine{
 	Application::Application()
 	{
+		engine = std::make_unique<GameEngine>();
 	}
 
 
@@ -14,12 +15,11 @@ namespace HEngine{
 
 	void Application::Run()
 	{
-		int i = 5;
-		while (i>0)
-		{
-			// Main loop logic goes here
-			HE_INFO("Application is running. Remaining iterations: {}", i);
-			i--;
-		}
+		HE_INFO("Application running started");
+		engine->Run();
+	}
+
+	void Application::SetCurrentScene(std::unique_ptr<HEngine::Scene> scene) {
+		this->engine->ChangeScene(std::move(scene));
 	}
 }

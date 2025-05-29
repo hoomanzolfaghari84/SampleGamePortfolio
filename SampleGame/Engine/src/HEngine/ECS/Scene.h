@@ -10,6 +10,7 @@ namespace HEngine {
 
 	class Entity;
 	class EntityManager;
+	
 
 	class HENGINE_API Scene {
 	public:
@@ -28,6 +29,9 @@ namespace HEngine {
 	private:
 		ComponentRegistry m_ComponentRegistry;
 		EntityManager m_EntityManager;
+
+		/*std::shared_ptr<ComponentRegistry> m_ComponentRegistry;
+		std::shared_ptr<EntityManager> m_EntityManager;*/
 	};
 
 }

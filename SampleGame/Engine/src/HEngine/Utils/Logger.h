@@ -1,6 +1,6 @@
 #pragma once
 #include <memory.h>
-#include "../Initializations/Core.h"
+#include "HEngine/Core/Core.h"
 #include <spdlog/spdlog.h>
 
 namespace HEngine

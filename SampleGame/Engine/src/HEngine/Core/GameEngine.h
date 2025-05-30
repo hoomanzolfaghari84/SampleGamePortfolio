@@ -1,24 +1,32 @@
 #pragma once
 
+#include <string>
 #include <SFML/Graphics.hpp>
-#include "../ECS/Entity.h"
-#include "../ECS/RenderSystem.h"
+
+#include "Core.h";
+#include "HEngine/ECS/Scene.h"
+
 namespace HEngine {
 
-    class GameEngine {
+    class HENGINE_API GameEngine {
     public:
-        GameEngine(unsigned int width = 800, unsigned int height = 600, const std::string& title = "HEngine Window");
-        void Run();
-        void ChangeScene(std::unique_ptr<Scene> newScene);
-
-    private:
-        sf::RenderWindow m_window;
-        std::unique_ptr<Scene> currentScene;
-        std::unique_ptr<RenderSystem> renderSystem;
+        GameEngine();
+        ~GameEngine();
 
         void Init();
-        void ProcessEvents();
-        void Update(float dt);
-        void Render();
+        void Run();
+        void Shutdown();
+
+        void AddScene(std::shared_ptr<Scene> scene);
+        void RemoveScene(const std::string& name);
+        std::shared_ptr<Scene> GetScene(const std::string& name);
+
+    private:
+        sf::RenderWindow m_Window;
+        std::unordered_map<std::string, std::shared_ptr<Scene>> m_Scenes;
+        std::vector<std::string> m_ActiveSceneNames;
+
+        bool m_Running = false;
+        float m_DeltaTime = 0.0f;
     };
 }

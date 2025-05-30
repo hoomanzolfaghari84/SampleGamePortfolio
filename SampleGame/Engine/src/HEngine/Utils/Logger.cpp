@@ -1,3 +1,4 @@
+#include "hepch.h"
 #include "Logger.h"
 
 #pragma warning(push)

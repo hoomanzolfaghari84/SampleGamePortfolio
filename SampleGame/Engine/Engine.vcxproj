@@ -19,40 +19,44 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\HEngine\ECS\Temp\EntityManager.cpp" />
-    <ClCompile Include="src\HEngine\ECS\RenderSystem.cpp" />
-    <ClCompile Include="src\HEngine\ECS\Component.cpp" />
-    <ClCompile Include="src\HEngine\Utils\Logger.cpp" />
+    <ClCompile Include="src\HEngine\ECS\Coordinator.cpp" />
+    <ClCompile Include="src\HEngine\ECS\ComponentManager.cpp" />
     <ClCompile Include="src\HEngine\ECS\EntityManager.cpp" />
-    <ClCompile Include="src\HEngine\ECS\Scene.cpp" />
-    <ClCompile Include="src\HEngine\Utils\HVector2D.cpp" />
+    <ClCompile Include="src\HEngine\Utils\Logger.cpp" />
     <ClCompile Include="src\HEngine\Core\GameEngine.cpp" />
     <ClCompile Include="src\HEngine\Core\HTime.cpp" />
-    <ClCompile Include="src\HEngine\Initializations\Application.cpp" />
-    <ClCompile Include="src\HEngine\Initializations\Core.h" />
+    <ClCompile Include="src\HEngine\Core\Application.cpp" />
+    <ClInclude Include="src\HEngine\Core\Core.h">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClInclude>
     <ClCompile Include="src\HEngine\Core\UUID.cpp" />
     <ClCompile Include="src\HEngine\ECS\System.cpp" />
+    <ClCompile Include="src\HEngine\ECS\SystemManager.cpp" />
+    <ClCompile Include="src\hepch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\HEngine\ECS\Temp\EntityManager.h" />
-    <ClInclude Include="src\HEngine\ECS\RenderSystem.h" />
-    <ClInclude Include="src\HEngine\ECS\Temp\ECSTypes.hpp" />
+    <ClInclude Include="src\HEngine\ECS\Coordinator.h" />
+    <ClInclude Include="src\HEngine\ECS\Component.h" />
+    <ClInclude Include="src\HEngine\ECS\ComponentManager.h" />
+    <ClInclude Include="src\HEngine\ECS\EntityManager.h" />
+    <ClInclude Include="src\HEngine\ECS\ECSTypes.hpp" />
     <ClInclude Include="src\HEngine\Events\HEvent.h" />
     <ClInclude Include="src\HEngine\Utils\Color.h" />
+    <ClInclude Include="src\HEngine\Utils\HMath.h" />
     <ClInclude Include="src\HEngine\Utils\Logger.h" />
-    <ClInclude Include="src\HEngine\ECS\ComponentRegistry.h" />
     <ClInclude Include="src\HEngine\Utils\HVector2D.h" />
-    <ClInclude Include="src\HEngine\ECS\Component.h" />
-    <ClInclude Include="src\HEngine\ECS\Entity.h" />
-    <ClInclude Include="src\HEngine\ECS\EntityManager.h" />
     <ClInclude Include="src\HEngine\Core\GameEngine.h" />
     <ClInclude Include="src\HEngine\Core\HTime.h" />
     <ClInclude Include="src\HEngine\ECS\Scene.h" />
     <ClInclude Include="src\HEngine.h" />
-    <ClInclude Include="src\HEngine\Initializations\Application.h" />
-    <ClInclude Include="src\HEngine\Initializations\EntryPoint.h" />
+    <ClInclude Include="src\HEngine\Core\Application.h" />
+    <ClInclude Include="src\HEngine\Core\EntryPoint.h" />
     <ClInclude Include="src\HEngine\Core\UUID.h" />
     <ClInclude Include="src\HEngine\ECS\System.h" />
+    <ClInclude Include="src\HEngine\ECS\SystemManager.h" />
+    <ClInclude Include="src\hepch.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -139,9 +143,11 @@
       <PreprocessorDefinitions>HE_PLATFORM_WINDOWS;HE_BUILD_DLL;SFML_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)\Engine\vendors\spdlog\include;C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Engine\src;$(SolutionDir)\Engine\vendors\spdlog\include;C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>hepch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

@@ -1,50 +1,26 @@
 #pragma once
+#include "ECSTypes.hpp"
+#include <queue>
+#include <array>
+#include <cassert>
 
-#include "..\Core\UUID.h"
-#include <unordered_map>
-#include <functional>
-#include <memory>
-#include <string>
-
-#include "../Initializations/Core.h"
 
 namespace HEngine {
 
-	class Scene;
-	class Entity;
+    class EntityManager {
+    public:
+        EntityManager();
 
-	class HENGINE_API EntityManager {
-	public:
+        Entity CreateEntity();
+        void DestroyEntity(Entity entity);
+        void SetSignature(Entity entity, Signature signature);
+        Signature GetSignature(Entity entity) const;
 
-		EntityManager(Scene* owningScene);
-		EntityManager(EntityManager&&) noexcept = default; // Allow move constructor
-		EntityManager& operator=(EntityManager&&) noexcept = delete; // Disable move assignment
-		EntityManager(const EntityManager&) = delete;
-		EntityManager& operator=(const EntityManager&) = delete;
-
-
-		Entity* CreateEntity(const std::string& name = "Entity");
-
-		void DestroyEntity(const UUID& id);
-
-		Entity* GetEntity(const UUID& id);
-		const Entity* GetEntity(const UUID& id) const;
-
-		void ForEach(const std::function<void(Entity&)>& func);
-		void ForEach(const std::function<void(const UUID&, Entity&)>& func);
-		void ForEach(const std::function<void(const Entity&)>& func) const;
-
-		//// Prevent copy
-		//EntityManager(const EntityManager&) = delete;
-		//EntityManager& operator=(const EntityManager&) = delete;
-
-		//// Allow move
-		//EntityManager(EntityManager&&) noexcept = default;
-		//EntityManager& operator=(EntityManager&&) noexcept = default;
-
-	private:
-		Scene* m_Scene;
-		std::unordered_map<UUID, std::unique_ptr<Entity>> m_Entities;
-	};
+    private:
+        std::queue<Entity> availableEntities;
+        std::array<Signature, MAX_ENTITIES> signatures;
+        uint32_t livingEntityCount = 0;
+    };
 
 }
+

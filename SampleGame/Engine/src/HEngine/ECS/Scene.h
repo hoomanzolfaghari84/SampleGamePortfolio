@@ -1,37 +1,43 @@
 #pragma once
 
-#include "EntityManager.h"
-#include "ComponentRegistry.h"
+#include "Coordinator.h"
+#include "HEngine/Core/Core.h"
 #include <SFML/Graphics/RenderWindow.hpp>
+#include <string>
+#include <memory>
 
-#include "../Initializations/Core.h"
+
 
 namespace HEngine {
 
-	class Entity;
-	class EntityManager;
-	
+    enum class SceneState {
+        Active,
+        Paused,
+        Inactive
+    };
 
-	class HENGINE_API Scene {
-	public:
-		Scene();
-		virtual ~Scene() = default;
+    class HENGINE_API Scene {
+    public:
+        Scene(const std::string& name) : m_Name(name) {};
+        virtual ~Scene() = default;
 
-		Entity* CreateEntity(const std::string& name = "Entity");
-		void DestroyEntity(UUID id);
+        virtual void OnCreate() = 0;
+        virtual void OnUpdate(float dt) = 0;
+        virtual void OnRender(sf::RenderWindow& window) = 0;
+        virtual void OnDestroy() {}
 
-		ComponentRegistry& GetComponentRegistry();
-		EntityManager& GetEntityManager();
+        const std::string& GetName() const { return m_Name; }
 
-		virtual void Update(float dt) = 0;
-		virtual void Render(sf::RenderWindow& window) = 0;
+        SceneState GetState() const { return m_State; }
+        void SetState(SceneState state) { m_State = state; }
 
-	private:
-		ComponentRegistry m_ComponentRegistry;
-		EntityManager m_EntityManager;
+        Coordinator& GetCoordinator() { return *m_Coordinator; }
+		//const Coordinator& GetCoordinator() const { return *m_Coordinator; }
 
-		/*std::shared_ptr<ComponentRegistry> m_ComponentRegistry;
-		std::shared_ptr<EntityManager> m_EntityManager;*/
-	};
+    protected:
+        std::string m_Name;
+        std::unique_ptr<Coordinator> m_Coordinator;
+        SceneState m_State = SceneState::Active;
+    };
 
 }

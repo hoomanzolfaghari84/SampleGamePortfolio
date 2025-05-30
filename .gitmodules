@@ -1,0 +1,6 @@
+[submodule "SampleGame/Engine/vendors/spdlog"]
+	path = SampleGame/Engine/vendors/spdlog
+	url = git@github.com:gabime/spdlog.git
+[submodule "SampleGame/Engine/vendors/EnTT"]
+	path = SampleGame/Engine/vendors/EnTT
+	url = https://github.com/skypjack/entt.git

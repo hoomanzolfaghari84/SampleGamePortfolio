@@ -1,0 +1,1303 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'fmt::v11::writer::file_' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/utils/logger.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 900,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fmt::v11::writer::{ctor}",
+                  "decoratedName": "??0writer@v11@fmt@@QEAA@AEAV?$buffer@D@detail@12@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "fmt::v11::writer::file_"
+          }
+        },
+        {
+          "ruleId": "C26800",
+          "message": {
+            "text": "Use of a moved from object: ''user_chars'' (lifetime.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/utils/logger.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                },
+                "region": {
+                  "startLine": 1335,
+                  "startColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "spdlog::pattern_formatter::compile_pattern_",
+                  "decoratedName": "?compile_pattern_@pattern_formatter@spdlog@@AEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1305,
+                            "startColumn": 39
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1306,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1306,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1307,
+                            "startColumn": 51
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1307,
+                            "startColumn": 51
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1308,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1309,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1309,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1309,
+                            "startColumn": 40
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1309,
+                            "startColumn": 40
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition 'result.!='. 'true' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1310,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1310,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '(int )(result.*) == 37'. 'true' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1311,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1311,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition 'result.._N'. 'true' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1313,
+                            "startColumn": 44
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1313,
+                            "startColumn": 48
+                          }
+                        },
+                        "message": {
+                          "text": "Object 'user_chars' is moved."
+                        }
+                      },
+                      "kinds": [
+                        "Custom"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1313,
+                            "startColumn": 38
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1313,
+                            "startColumn": 48
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1316,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1316,
+                            "startColumn": 50
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1316,
+                            "startColumn": 50
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1316,
+                            "startColumn": 44
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1316,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1318,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1318,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition 'result.!='. 'false' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1325,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+                          },
+                          "region": {
+                            "startLine": 1335,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "The function 'fmt::v11::detail::num_bits<unsigned __int64>' is constexpr, mark variable 'shift' constexpr if compile-time evaluation is desired (con.5)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/utils/logger.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2568,
+                  "startColumn": 15,
+                  "endLine": 2568,
+                  "endColumn": 47
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fmt::v11::detail::bigint::multiply",
+                  "decoratedName": "??$multiply@Vuint128_fallback@detail@v11@fmt@@$0A@@bigint@detail@v11@fmt@@AEAAXVuint128_fallback@123@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6294",
+          "message": {
+            "text": "Ill-defined for-loop.  Loop body not executed."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/utils/logger.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/fmt/bundled/base.h"
+                },
+                "region": {
+                  "startLine": 1711,
+                  "startColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fmt::v11::detail::format_string_checker<char,3,0,0>::on_arg_id",
+                  "decoratedName": "?on_arg_id@?$format_string_checker@D$02$0A@$0A@@detail@v11@fmt@@QEAAHV?$basic_string_view@D@34@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6294",
+          "message": {
+            "text": "Ill-defined for-loop.  Loop body not executed."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/utils/logger.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/fmt/bundled/base.h"
+                },
+                "region": {
+                  "startLine": 1711,
+                  "startColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fmt::v11::detail::format_string_checker<char,1,0,0>::on_arg_id",
+                  "decoratedName": "?on_arg_id@?$format_string_checker@D$00$0A@$0A@@detail@v11@fmt@@QEAAHV?$basic_string_view@D@34@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6294",
+          "message": {
+            "text": "Ill-defined for-loop.  Loop body not executed."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/utils/logger.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/fmt/bundled/base.h"
+                },
+                "region": {
+                  "startLine": 1711,
+                  "startColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fmt::v11::detail::format_string_checker<char,2,0,0>::on_arg_id",
+                  "decoratedName": "?on_arg_id@?$format_string_checker@D$01$0A@$0A@@detail@v11@fmt@@QEAAHV?$basic_string_view@D@34@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "The function 'fmt::v11::detail::exponent_mask<float>' is constexpr, mark variable 'mask' constexpr if compile-time evaluation is desired (con.5)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/utils/logger.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 3374,
+                  "startColumn": 15,
+                  "endLine": 3374,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fmt::v11::detail::write",
+                  "decoratedName": "??$write@DV?$basic_appender@D@v11@fmt@@M$0A@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@M@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "The function 'fmt::v11::detail::exponent_mask<double>' is constexpr, mark variable 'mask' constexpr if compile-time evaluation is desired (con.5)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/utils/logger.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 3374,
+                  "startColumn": 15,
+                  "endLine": 3374,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fmt::v11::detail::write",
+                  "decoratedName": "??$write@DV?$basic_appender@D@v11@fmt@@N$0A@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "The function 'fmt::v11::detail::exponent_mask<double>' is constexpr, mark variable 'mask' constexpr if compile-time evaluation is desired (con.5)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/utils/logger.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 3374,
+                  "startColumn": 15,
+                  "endLine": 3374,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fmt::v11::detail::write",
+                  "decoratedName": "??$write@DV?$basic_appender@D@v11@fmt@@O$0A@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@O@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6294",
+          "message": {
+            "text": "Ill-defined for-loop.  Loop body not executed."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/utils/logger.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/fmt/bundled/base.h"
+                },
+                "region": {
+                  "startLine": 1711,
+                  "startColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fmt::v11::detail::format_string_checker<char,0,0,0>::on_arg_id",
+                  "decoratedName": "?on_arg_id@?$format_string_checker@D$0A@$0A@$0A@@detail@v11@fmt@@QEAAHV?$basic_string_view@D@34@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "The function 'fmt::v11::detail::num_significand_bits<float>' is constexpr, mark variable 'significand_mask' constexpr if compile-time evaluation is desired (con.5)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/utils/logger.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/fmt/bundled/format-inl.h"
+                },
+                "region": {
+                  "startLine": 1267,
+                  "startColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fmt::v11::detail::dragonbox::to_decimal",
+                  "decoratedName": "??$to_decimal@M@dragonbox@detail@v11@fmt@@YA?AU?$decimal_fp@M@0123@M@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "The function 'fmt::v11::detail::num_significand_bits<double>' is constexpr, mark variable 'significand_mask' constexpr if compile-time evaluation is desired (con.5)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/utils/logger.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/fmt/bundled/format-inl.h"
+                },
+                "region": {
+                  "startLine": 1267,
+                  "startColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fmt::v11::detail::dragonbox::to_decimal",
+                  "decoratedName": "??$to_decimal@N@dragonbox@detail@v11@fmt@@YA?AU?$decimal_fp@N@0123@N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "The function 'fmt::v11::detail::num_significand_bits<double>' is constexpr, mark variable 'num_float_significand_bits' constexpr if compile-time evaluation is desired (con.5)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/utils/logger.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2908,
+                  "startColumn": 14,
+                  "endLine": 2908,
+                  "endColumn": 78
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fmt::v11::detail::format_hexfloat",
+                  "decoratedName": "??$format_hexfloat@N$0A@@detail@v11@fmt@@YAXNUformat_specs@12@AEAV?$buffer@D@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "The function 'fmt::v11::detail::num_significand_bits<double>' is constexpr, mark variable 'significand_mask' constexpr if compile-time evaluation is desired (con.5)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/utils/logger.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 3032,
+                  "startColumn": 20
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fmt::v11::detail::format_float",
+                  "decoratedName": "??$format_float@N@detail@v11@fmt@@YAHNHAEBUformat_specs@12@_NAEAV?$buffer@D@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "The function 'fmt::v11::detail::num_significand_bits<float>' is constexpr, mark variable 'num_float_significand_bits' constexpr if compile-time evaluation is desired (con.5)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/utils/logger.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 1537,
+                  "startColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fmt::v11::detail::basic_fp<fmt::v11::detail::uint128_fallback>::assign",
+                  "decoratedName": "??$assign@M$0A@@?$basic_fp@Vuint128_fallback@detail@v11@fmt@@@detail@v11@fmt@@QEAA_NM@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "The function 'fmt::v11::detail::num_significand_bits<double>' is constexpr, mark variable 'num_float_significand_bits' constexpr if compile-time evaluation is desired (con.5)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/utils/logger.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 1537,
+                  "startColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fmt::v11::detail::basic_fp<fmt::v11::detail::uint128_fallback>::assign",
+                  "decoratedName": "??$assign@N$0A@@?$basic_fp@Vuint128_fallback@detail@v11@fmt@@@detail@v11@fmt@@QEAA_NN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "The function 'fmt::v11::detail::num_significand_bits<double>' is constexpr, mark variable 'num_float_significand_bits' constexpr if compile-time evaluation is desired (con.5)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/utils/logger.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 1537,
+                  "startColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fmt::v11::detail::basic_fp<unsigned __int64>::assign",
+                  "decoratedName": "??$assign@N$0A@@?$basic_fp@_K@detail@v11@fmt@@QEAA_NN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "MSVC Code Analysis",
+          "version": "14.44.35207.1",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/utils/logger.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "0f90b04c6358b5dc108957c3302550b0f7c97f5c6c1a6b06aca7f2bc30c27745"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/fmt/bundled/format.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "104486cdd6de577a595b66aa6b1d9730f83ba63d8949f7fe2fb90cd3646f2a2b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/pattern_formatter-inl.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "0a07f0800351d23f1a77547239ecaac56f81706e90dd1f1b066037c3c4ca7ab6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/fmt/bundled/base.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "bc9ebc0515d18e3421ce86c526cae599389021cd5f370176c3a0217a9c429d97"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Asus/Desktop/personal_projects/Turnover/SampleGamePortfolio/SampleGame/Engine/vendors/spdlog/include/spdlog/fmt/bundled/format-inl.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "4c6da8797cfe161f8a5bbbb5dcc1c5b561355c9a0e6b0e83ad729d834ba4e02e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/utils/logger.h"
+          },
+          "hashes": {
+            "sha-256": "f2170a4f3948cd980106e77a66ebd21fefdfa3ca28033fa1ced8d99f7eadabc8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/src/hengine/initializations/core.h"
+          },
+          "hashes": {
+            "sha-256": "fe18b6087c63090e8117f5bf7a680f7231e1f076e64c07b2ed9ff1f1bf10339e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/spdlog.h"
+          },
+          "hashes": {
+            "sha-256": "1a42b610f303e42904b2edf76938444a18df9a6526497ce7f939e7a72e96c358"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/common.h"
+          },
+          "hashes": {
+            "sha-256": "ecf322a6ca61d6045dbf15d7b026ec56b624611e0159ed2831feb3d37df8da6a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/details/null_mutex.h"
+          },
+          "hashes": {
+            "sha-256": "61adb31ad34f9338494225e2ea08e461f91ab016d5ee075fd0aae8dd9c5e079f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/tweakme.h"
+          },
+          "hashes": {
+            "sha-256": "7edd4db75c4a3b0c19ce7c05a1e750eb90a64e694ec54b65501c5c23df17a20a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/fmt/fmt.h"
+          },
+          "hashes": {
+            "sha-256": "5385f15a0cb428f8790357db485ceef98f08ce67cf862c1b352b40a77c55f5b5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/common-inl.h"
+          },
+          "hashes": {
+            "sha-256": "743f66652a6e706a9c3d8005f14baf7a2243027d7c5781feabf990de2870393c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/details/registry.h"
+          },
+          "hashes": {
+            "sha-256": "4c305dd010d32e7b3303b205069c3621ebc66d3f7993fd4d90bb6f03310a7760"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/details/periodic_worker.h"
+          },
+          "hashes": {
+            "sha-256": "b45dd99a965a99c9aaa912f1306a8bad9d7e8dce7c6a75e391f391338e94c46e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/details/periodic_worker-inl.h"
+          },
+          "hashes": {
+            "sha-256": "912b5b2ec4c22f98fab3df544aa51f96be3528f80fb75ef283fe0ac01c66ba35"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/details/registry-inl.h"
+          },
+          "hashes": {
+            "sha-256": "e79a80b42df44f45bb169cccaa9008be6180e58b6b31827ea2ceec5512689698"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/logger.h"
+          },
+          "hashes": {
+            "sha-256": "737c2e640395c68f556ee53f03e30e2f4cb5df05b375776c0641b83c344c6446"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/details/backtracer.h"
+          },
+          "hashes": {
+            "sha-256": "d86cee17920337eae77381c5d08855120822aa57f5d677ab2a0d5a6ff779dd24"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/details/circular_q.h"
+          },
+          "hashes": {
+            "sha-256": "d36a4e64cfd0d905503b60d4870535f9c7e114eba129a8695a0ebe0501414827"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/details/log_msg_buffer.h"
+          },
+          "hashes": {
+            "sha-256": "443c1c83a88808788d543bf43e5dc2db408d37af6bb8534ed557e2b78583cf16"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/details/log_msg.h"
+          },
+          "hashes": {
+            "sha-256": "56204baa698c2357d40f522d9c507cfb86f73a45288aab91b750c31117dfdc98"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/details/log_msg-inl.h"
+          },
+          "hashes": {
+            "sha-256": "f9bd404760d826c9ea436b43b696b69c5a7609b772c43d88a03dfbc89d01578d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/details/os.h"
+          },
+          "hashes": {
+            "sha-256": "9152d02dcdd3df75956636550d11d67c6780c381db5845cd57ff52ffd44dee20"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/details/os-inl.h"
+          },
+          "hashes": {
+            "sha-256": "e6281566c7ea4adc5089f451802420e0ec6ca8a9374dfcc1cee584a293b42fe1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/details/windows_include.h"
+          },
+          "hashes": {
+            "sha-256": "2cd552b222955adea8d908f54d028b77f9d5ec228a4a184fea00caedc0c29513"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/details/log_msg_buffer-inl.h"
+          },
+          "hashes": {
+            "sha-256": "f273a47e232e69c003bb5582a46334a5c00f931bb71029216f67c55fa504db4d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/details/backtracer-inl.h"
+          },
+          "hashes": {
+            "sha-256": "da83d208b8e3e9f31e5afa14d1b98011a589247cdaa39bfd2a4e291dc72c1bc4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/logger-inl.h"
+          },
+          "hashes": {
+            "sha-256": "2eb705cb293ef6077619e94e42b9e474dab03d223b037e3dc16004983f690c37"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/pattern_formatter.h"
+          },
+          "hashes": {
+            "sha-256": "84c8a189aeb3ef988633da816a70609ce88285c713f50c51b6a024ba621196a2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/formatter.h"
+          },
+          "hashes": {
+            "sha-256": "b5f6397006c597b7ea49d26ac2feed2d642678527c31a09773653b9f1880114d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/details/fmt_helper.h"
+          },
+          "hashes": {
+            "sha-256": "492ab7a618953d5545366045e50bc5780c0fe88074332274c24db6555c9c9f3b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/mdc.h"
+          },
+          "hashes": {
+            "sha-256": "3a05fcf757e24e353adf3199c3545d942b5e820111d4946ec25c198aca16394d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/sinks/sink.h"
+          },
+          "hashes": {
+            "sha-256": "28ed738ed6946ce36470001b868163c6b7fec085ed93e63fb7d0b35b8ea43e42"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/sinks/sink-inl.h"
+          },
+          "hashes": {
+            "sha-256": "6db37af7e4d2c42fa49737e2c6fb6636c3cd2e4c69c52a4f1291ac30f8c79856"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/sinks/wincolor_sink.h"
+          },
+          "hashes": {
+            "sha-256": "a71351347a5f82ed0d2d68f37c228cc113b292ac7b7fbdb06acf8740b5e96340"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/details/console_globals.h"
+          },
+          "hashes": {
+            "sha-256": "3cc3ad32dbeb007d6de98a6b33180efa137c3b885be4d410eb597f7c8fe620de"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/sinks/wincolor_sink-inl.h"
+          },
+          "hashes": {
+            "sha-256": "ff68cf12c3a43fdee379eeace1dc78857aeb16b8d4a00aa04ac5db11da68a5e5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/details/synchronous_factory.h"
+          },
+          "hashes": {
+            "sha-256": "a5b345a5cfd5512da7748c0c0f00dac6fe8cfff7f285dfe670733d969c42410f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/version.h"
+          },
+          "hashes": {
+            "sha-256": "e8df25f4afd07f276bfd8b3fc5c926e907fc971b9f84400f408567ab5d23b2b1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/spdlog-inl.h"
+          },
+          "hashes": {
+            "sha-256": "ce699c45249415db71e2743f72dddc54e3e4c497339cb6e67ff52f4c4ab33fb9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/sinks/stdout_color_sinks.h"
+          },
+          "hashes": {
+            "sha-256": "b004eac3fc96956d1b3534fe0b7f4759edf7f6519a57fcb2ddbe85b91f156811"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/desktop/personal_projects/turnover/samplegameportfolio/samplegame/engine/vendors/spdlog/include/spdlog/sinks/stdout_color_sinks-inl.h"
+          },
+          "hashes": {
+            "sha-256": "327145c2afe80b3864608e246bba23aff863ff419d48201e8ac13b9bff850f41"
+          }
+        }
+      ]
+    }
+  ]
+}

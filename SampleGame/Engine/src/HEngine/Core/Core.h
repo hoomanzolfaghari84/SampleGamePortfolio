@@ -10,3 +10,5 @@
 #else
 	#error HEngine only supports Windows!
 #endif // HE_PLATFORM_WINDOWS
+
+#define BIT(x) (1 << x)

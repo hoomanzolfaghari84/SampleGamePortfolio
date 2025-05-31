@@ -130,7 +130,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\MenuScene\MenuScene.cpp" />
     <ClCompile Include="src\TurnoverGame.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -142,7 +141,7 @@
     <ClInclude Include="src\MenuScene\MenuScene.h" />
   </ItemGroup>
   <ItemGroup>
-    <Font Include="..\..\..\..\..\personal projects\cpp-training\library-setup-training\WindowKill\resources\arial.ttf" />
+    <Font Include="arial.ttf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

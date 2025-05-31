@@ -19,43 +19,45 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\HEngine\ECS\Coordinator.cpp" />
-    <ClCompile Include="src\HEngine\ECS\ComponentManager.cpp" />
-    <ClCompile Include="src\HEngine\ECS\EntityManager.cpp" />
+    <ClCompile Include="src\HEngine\Renderer\RenderQueue.cpp" />
+    <ClCompile Include="src\HEngine\ECS\ScenesLayer.cpp" />
+    <ClCompile Include="src\HEngine\Core\LayerStack.cpp" />
+    <ClCompile Include="src\HEngine\Core\Layer.cpp" />
     <ClCompile Include="src\HEngine\Utils\Logger.cpp" />
     <ClCompile Include="src\HEngine\Core\GameEngine.cpp" />
-    <ClCompile Include="src\HEngine\Core\HTime.cpp" />
+    <ClCompile Include="src\HEngine\Core\Timestep.cpp" />
     <ClCompile Include="src\HEngine\Core\Application.cpp" />
+    <ClInclude Include="src\HEngine\Events\EventBus.h" />
+    <ClInclude Include="src\HEngine\Renderer\RenderQueue.h" />
+    <ClInclude Include="src\HEngine\ECS\Systems.h" />
+    <ClInclude Include="src\HEngine\Renderer\SFMLRenderAPI.h" />
+    <ClInclude Include="src\HEngine\Renderer\RenderAPI.h" />
+    <ClInclude Include="src\HEngine\ECS\ScenesLayer.h" />
+    <ClInclude Include="src\HEngine\Core\LayerStack.h" />
     <ClInclude Include="src\HEngine\Core\Core.h">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
     </ClInclude>
     <ClCompile Include="src\HEngine\Core\UUID.cpp" />
-    <ClCompile Include="src\HEngine\ECS\System.cpp" />
-    <ClCompile Include="src\HEngine\ECS\SystemManager.cpp" />
     <ClCompile Include="src\hepch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\HEngine\ECS\Coordinator.h" />
+    <ClInclude Include="src\HEngine\Core\Layer.h" />
     <ClInclude Include="src\HEngine\ECS\Component.h" />
-    <ClInclude Include="src\HEngine\ECS\ComponentManager.h" />
-    <ClInclude Include="src\HEngine\ECS\EntityManager.h" />
-    <ClInclude Include="src\HEngine\ECS\ECSTypes.hpp" />
+    <ClInclude Include="src\HEngine\ECS\HECS.hpp" />
     <ClInclude Include="src\HEngine\Events\HEvent.h" />
     <ClInclude Include="src\HEngine\Utils\Color.h" />
     <ClInclude Include="src\HEngine\Utils\HMath.h" />
     <ClInclude Include="src\HEngine\Utils\Logger.h" />
     <ClInclude Include="src\HEngine\Utils\HVector2D.h" />
     <ClInclude Include="src\HEngine\Core\GameEngine.h" />
-    <ClInclude Include="src\HEngine\Core\HTime.h" />
+    <ClInclude Include="src\HEngine\Core\Timestep.h" />
     <ClInclude Include="src\HEngine\ECS\Scene.h" />
     <ClInclude Include="src\HEngine.h" />
     <ClInclude Include="src\HEngine\Core\Application.h" />
     <ClInclude Include="src\HEngine\Core\EntryPoint.h" />
     <ClInclude Include="src\HEngine\Core\UUID.h" />
-    <ClInclude Include="src\HEngine\ECS\System.h" />
-    <ClInclude Include="src\HEngine\ECS\SystemManager.h" />
     <ClInclude Include="src\hepch.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

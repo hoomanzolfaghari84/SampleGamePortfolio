@@ -17,6 +17,7 @@ namespace HEngine{
 		HE_INFO("Application running started");
 		engine->Init();
 		engine->Run();
+		engine->Shutdown();
 	}
 
 	void Application::AddScene(std::shared_ptr<HEngine::Scene> scene) {

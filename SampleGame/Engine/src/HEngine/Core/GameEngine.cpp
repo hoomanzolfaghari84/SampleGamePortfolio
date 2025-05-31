@@ -1,6 +1,9 @@
 #include "hepch.h"
 #include "GameEngine.h"
 #include <chrono>
+#include "HEngine/ECS/ScenesLayer.h"
+#include "HEngine/Renderer/RenderAPI.h"
+#include "HEngine/Renderer/SFMLRenderAPI.h"
 
 HEngine::GameEngine::GameEngine()
     : m_Window(sf::VideoMode({1280, 720}), "HEngine Game") {
@@ -11,16 +14,20 @@ HEngine::GameEngine::~GameEngine() {
 }
 
 void HEngine::GameEngine::Init() {
-    m_Running = true;
 
+    HEngine::ScenesLayer* sceneLayer = new ScenesLayer();
     // Initialize scenes
-    for (auto& [name, scene] : m_Scenes) {
-        scene->OnCreate();
+    for (auto& scene : m_Scenes) {
+        sceneLayer->RegisterScene(scene);
     }
+    m_LayerStack.PushLayer(sceneLayer);
+
+    m_Running = true;
 }
 
 void HEngine::GameEngine::Run() {
     using clock = std::chrono::high_resolution_clock;
+    HRenderAPI* renderer = new SFMLRenderAPI(m_Window);
 
     while (m_Window.isOpen() && m_Running) {
         auto start = clock::now();
@@ -28,59 +35,47 @@ void HEngine::GameEngine::Run() {
         while (const std::optional event = m_Window.pollEvent()) {
 
             if (event->is<sf::Event::Closed>())
+            {
                 m_Window.close();
-        }
-
-        m_Window.clear();
-
-        // Update and render scenes
-        for (const auto& name : m_ActiveSceneNames) {
-            auto scene = GetScene(name);
-            if (!scene) continue;
-
-            switch (scene->GetState()) {
-            case SceneState::Active:
-                scene->OnUpdate(m_DeltaTime);
-                scene->OnRender(m_Window);
-                break;
-            case SceneState::Paused:
-                scene->OnRender(m_Window);  // still render
-                break;
-            case SceneState::Inactive:
-                break;
             }
+                
         }
 
-        m_Window.display();
+        HTimestep ts(m_DeltaTime);
+
+        for (auto* layer : m_LayerStack)
+            layer->OnUpdate(ts);
+
+        renderer->BeginFrame();
+        renderer->Clear(HColor::Black);
+
+        for (auto* layer : m_LayerStack)
+            layer->OnRender(*renderer);
+
+        renderer->EndFrame();
+        renderer->Present();
 
         auto end = clock::now();
         m_DeltaTime = std::chrono::duration<float>(end - start).count();
     }
+
+    delete renderer;
 }
 
 void HEngine::GameEngine::Shutdown() {
-    for (auto& [name, scene] : m_Scenes) {
-        scene->OnDestroy();
-    }
-    m_Scenes.clear();
-    m_ActiveSceneNames.clear();
+    HE_CORE_INFO("Shutting Down Engine");
+    //delete &m_LayerStack;
 }
 
 void HEngine::GameEngine::AddScene(std::shared_ptr<HEngine::Scene> scene) {
-    const auto& name = scene->GetName();
-    m_Scenes[name] = scene;
-    m_ActiveSceneNames.push_back(name);
+    m_Scenes.push_back(scene);
 }
 
-void HEngine::GameEngine::RemoveScene(const std::string& name) {
-    m_Scenes.erase(name);
-    m_ActiveSceneNames.erase(
-        std::remove(m_ActiveSceneNames.begin(), m_ActiveSceneNames.end(), name),
-        m_ActiveSceneNames.end());
-}
+//void HEngine::GameEngine::RemoveScene(const std::string& name) {
+//    m_Scenes.erase(name);
+//    m_ActiveSceneNames.erase(
+//        std::remove(m_ActiveSceneNames.begin(), m_ActiveSceneNames.end(), name),
+//        m_ActiveSceneNames.end());
+//}
 
-std::shared_ptr<HEngine::Scene> HEngine::GameEngine::GetScene(const std::string& name) {
-    if (m_Scenes.find(name) != m_Scenes.end())
-        return m_Scenes[name];
-    return nullptr;
-}
+

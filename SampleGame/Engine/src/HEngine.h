@@ -9,6 +9,8 @@
 
 #include "HEngine/ECS/Scene.h""
 #include "HEngine/ECS/Component.h"
-#include "HEngine/ECS/Coordinator.h"
+#include "HEngine/ECS/Systems.h"
+
+#include "HEngine/Renderer/RenderAPI.h"
 
 #include <SFML/Graphics.hpp>

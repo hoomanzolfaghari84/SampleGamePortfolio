@@ -21,7 +21,7 @@
     <ClCompile Include="src\HEngine\Core\GameEngine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\HEngine\Core\HTime.cpp">
+    <ClCompile Include="src\HEngine\Core\Timestep.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\HEngine\Core\UUID.cpp">
@@ -30,22 +30,19 @@
     <ClCompile Include="src\HEngine\Utils\Logger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\HEngine\ECS\System.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\HEngine\ECS\EntityManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\HEngine\ECS\ComponentManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\HEngine\ECS\SystemManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\HEngine\ECS\Coordinator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\hepch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HEngine\Core\Layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HEngine\Core\LayerStack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HEngine\ECS\ScenesLayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HEngine\Renderer\RenderQueue.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -65,7 +62,7 @@
     <ClInclude Include="src\HEngine\Core\GameEngine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\HEngine\Core\HTime.h">
+    <ClInclude Include="src\HEngine\Core\Timestep.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\HEngine\Core\UUID.h">
@@ -80,28 +77,10 @@
     <ClInclude Include="src\HEngine\Events\HEvent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\HEngine\ECS\System.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\HEngine\Utils\Color.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\HEngine\ECS\ECSTypes.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\HEngine\ECS\EntityManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\HEngine\ECS\ComponentManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\HEngine\ECS\SystemManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\HEngine\ECS\Component.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\HEngine\ECS\Coordinator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\HEngine\Utils\HMath.h">
@@ -112,6 +91,33 @@
     </ClInclude>
     <ClInclude Include="src\HEngine\Core\Core.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HEngine\ECS\HECS.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HEngine\Core\Layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HEngine\Core\LayerStack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HEngine\ECS\ScenesLayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HEngine\Renderer\RenderAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HEngine\Renderer\SFMLRenderAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HEngine\ECS\Systems.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HEngine\Renderer\RenderQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HEngine\Events\EventBus.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

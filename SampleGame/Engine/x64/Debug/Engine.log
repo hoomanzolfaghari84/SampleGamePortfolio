@@ -1,91 +1,94 @@
-﻿  Coordinator.cpp
+﻿  ScenesLayer.cpp
 C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(10,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/src/HEngine/ECS/Coordinator.cpp')
+  (compiling source file '/src/HEngine/ECS/ScenesLayer.cpp')
   
 C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(11,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/src/HEngine/ECS/Coordinator.cpp')
+  (compiling source file '/src/HEngine/ECS/ScenesLayer.cpp')
   
 C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(22,47): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/src/HEngine/ECS/Coordinator.cpp')
+  (compiling source file '/src/HEngine/ECS/ScenesLayer.cpp')
   
 C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(22,60): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/src/HEngine/ECS/Coordinator.cpp')
+  (compiling source file '/src/HEngine/ECS/ScenesLayer.cpp')
   
 C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(23,47): warning C4244: '/=': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/src/HEngine/ECS/Coordinator.cpp')
+  (compiling source file '/src/HEngine/ECS/ScenesLayer.cpp')
   
 C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(23,60): warning C4244: '/=': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/src/HEngine/ECS/Coordinator.cpp')
+  (compiling source file '/src/HEngine/ECS/ScenesLayer.cpp')
   
 C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(14,21): warning C4251: 'HEngine::TagComponent::Tag': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TagComponent'
-  (compiling source file '/src/HEngine/ECS/Coordinator.cpp')
+  (compiling source file '/src/HEngine/ECS/ScenesLayer.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(40,21): warning C4251: 'HEngine::TextComponent::text': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TextComponent'
-  (compiling source file '/src/HEngine/ECS/Coordinator.cpp')
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(46,21): warning C4251: 'HEngine::TextComponent::text': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TextComponent'
+  (compiling source file '/src/HEngine/ECS/ScenesLayer.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(43,21): warning C4251: 'HEngine::TextComponent::fontPath': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TextComponent'
-  (compiling source file '/src/HEngine/ECS/Coordinator.cpp')
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(49,21): warning C4251: 'HEngine::TextComponent::fontPath': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TextComponent'
+  (compiling source file '/src/HEngine/ECS/ScenesLayer.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(42,39): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
-  (compiling source file '/src/HEngine/ECS/Coordinator.cpp')
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(48,39): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+  (compiling source file '/src/HEngine/ECS/ScenesLayer.cpp')
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Coordinator.h(47,40): warning C4251: 'HEngine::Coordinator::m_EntityManager': 'std::unique_ptr<HEngine::EntityManager,std::default_delete<HEngine::EntityManager>>' needs to have dll-interface to be used by clients of 'HEngine::Coordinator'
-  (compiling source file '/src/HEngine/ECS/Coordinator.cpp')
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(59,28): warning C4251: 'HEngine::ECS::EntityManager::availableEntities': 'std::queue<HEngine::ECS::Entity,std::deque<HEngine::ECS::Entity,std::allocator<HEngine::ECS::Entity>>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::EntityManager'
+  (compiling source file '/src/HEngine/ECS/ScenesLayer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\queue(34,7):
+      see declaration of 'std::queue<HEngine::ECS::Entity,std::deque<HEngine::ECS::Entity,std::allocator<HEngine::ECS::Entity>>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(148,64): warning C4251: 'HEngine::ECS::ComponentManager::componentArrays': 'std::unordered_map<size_t,std::shared_ptr<void>,std::hash<uint64_t>,std::equal_to<uint64_t>,std::allocator<std::pair<const size_t,std::shared_ptr<void>>>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::ComponentManager'
+  (compiling source file '/src/HEngine/ECS/ScenesLayer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,7):
+      see declaration of 'std::unordered_map<size_t,std::shared_ptr<void>,std::hash<uint64_t>,std::equal_to<uint64_t>,std::allocator<std::pair<const size_t,std::shared_ptr<void>>>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(176,36): warning C4251: 'HEngine::ECS::System::entities': 'std::unordered_set<HEngine::ECS::Entity,std::hash<unsigned int>,std::equal_to<unsigned int>,std::allocator<HEngine::ECS::Entity>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::System'
+  (compiling source file '/src/HEngine/ECS/ScenesLayer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_set(59,7):
+      see declaration of 'std::unordered_set<HEngine::ECS::Entity,std::hash<unsigned int>,std::equal_to<unsigned int>,std::allocator<HEngine::ECS::Entity>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(217,52): warning C4251: 'HEngine::ECS::SystemManager::signatures': 'std::unordered_map<const char *,HEngine::ECS::Signature,std::hash<const char *>,std::equal_to<const char *>,std::allocator<std::pair<const char *const ,HEngine::ECS::Signature>>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::SystemManager'
+  (compiling source file '/src/HEngine/ECS/ScenesLayer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,7):
+      see declaration of 'std::unordered_map<const char *,HEngine::ECS::Signature,std::hash<const char *>,std::equal_to<const char *>,std::allocator<std::pair<const char *const ,HEngine::ECS::Signature>>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(218,66): warning C4251: 'HEngine::ECS::SystemManager::systems': 'std::unordered_map<const char *,std::shared_ptr<HEngine::ECS::System>,std::hash<const char *>,std::equal_to<const char *>,std::allocator<std::pair<const char *const ,std::shared_ptr<HEngine::ECS::System>>>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::SystemManager'
+  (compiling source file '/src/HEngine/ECS/ScenesLayer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,7):
+      see declaration of 'std::unordered_map<const char *,std::shared_ptr<HEngine::ECS::System>,std::hash<const char *>,std::equal_to<const char *>,std::allocator<std::pair<const char *const ,std::shared_ptr<HEngine::ECS::System>>>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(288,40): warning C4251: 'HEngine::ECS::Coordinator::entityManager': 'std::unique_ptr<HEngine::ECS::EntityManager,std::default_delete<HEngine::ECS::EntityManager>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::Coordinator'
+  (compiling source file '/src/HEngine/ECS/ScenesLayer.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
-      see declaration of 'std::unique_ptr<HEngine::EntityManager,std::default_delete<HEngine::EntityManager>>'
+      see declaration of 'std::unique_ptr<HEngine::ECS::EntityManager,std::default_delete<HEngine::ECS::EntityManager>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Coordinator.h(48,43): warning C4251: 'HEngine::Coordinator::m_ComponentManager': 'std::unique_ptr<HEngine::ComponentManager,std::default_delete<HEngine::ComponentManager>>' needs to have dll-interface to be used by clients of 'HEngine::Coordinator'
-  (compiling source file '/src/HEngine/ECS/Coordinator.cpp')
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(289,43): warning C4251: 'HEngine::ECS::Coordinator::componentManager': 'std::unique_ptr<HEngine::ECS::ComponentManager,std::default_delete<HEngine::ECS::ComponentManager>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::Coordinator'
+  (compiling source file '/src/HEngine/ECS/ScenesLayer.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
-      see declaration of 'std::unique_ptr<HEngine::ComponentManager,std::default_delete<HEngine::ComponentManager>>'
+      see declaration of 'std::unique_ptr<HEngine::ECS::ComponentManager,std::default_delete<HEngine::ECS::ComponentManager>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Coordinator.h(49,40): warning C4251: 'HEngine::Coordinator::m_SystemManager': 'std::unique_ptr<HEngine::SystemManager,std::default_delete<HEngine::SystemManager>>' needs to have dll-interface to be used by clients of 'HEngine::Coordinator'
-  (compiling source file '/src/HEngine/ECS/Coordinator.cpp')
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(290,40): warning C4251: 'HEngine::ECS::Coordinator::systemManager': 'std::unique_ptr<HEngine::ECS::SystemManager,std::default_delete<HEngine::ECS::SystemManager>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::Coordinator'
+  (compiling source file '/src/HEngine/ECS/ScenesLayer.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
-      see declaration of 'std::unique_ptr<HEngine::SystemManager,std::default_delete<HEngine::SystemManager>>'
+      see declaration of 'std::unique_ptr<HEngine::ECS::SystemManager,std::default_delete<HEngine::ECS::SystemManager>>'
   
-  ComponentManager.cpp
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(10,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/src/HEngine/ECS/ComponentManager.cpp')
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(11,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/src/HEngine/ECS/ComponentManager.cpp')
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(22,47): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/src/HEngine/ECS/ComponentManager.cpp')
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(22,60): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/src/HEngine/ECS/ComponentManager.cpp')
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(23,47): warning C4244: '/=': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/src/HEngine/ECS/ComponentManager.cpp')
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(23,60): warning C4244: '/=': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/src/HEngine/ECS/ComponentManager.cpp')
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(14,21): warning C4251: 'HEngine::TagComponent::Tag': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TagComponent'
-  (compiling source file '/src/HEngine/ECS/ComponentManager.cpp')
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(47,21): warning C4251: 'HEngine::Scene::m_Name': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::Scene'
+  (compiling source file '/src/HEngine/ECS/ScenesLayer.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(40,21): warning C4251: 'HEngine::TextComponent::text': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TextComponent'
-  (compiling source file '/src/HEngine/ECS/ComponentManager.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(48,48): warning C4251: 'HEngine::Scene::m_RenderQueue': 'std::unique_ptr<HEngine::HRenderQueue,std::default_delete<HEngine::HRenderQueue>>' needs to have dll-interface to be used by clients of 'HEngine::Scene'
+  (compiling source file '/src/HEngine/ECS/ScenesLayer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      see declaration of 'std::unique_ptr<HEngine::HRenderQueue,std::default_delete<HEngine::HRenderQueue>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(43,21): warning C4251: 'HEngine::TextComponent::fontPath': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TextComponent'
-  (compiling source file '/src/HEngine/ECS/ComponentManager.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(42,39): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
-  (compiling source file '/src/HEngine/ECS/ComponentManager.cpp')
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(49,52): warning C4251: 'HEngine::Scene::m_Coordinator': 'std::unique_ptr<HEngine::ECS::Coordinator,std::default_delete<HEngine::ECS::Coordinator>>' needs to have dll-interface to be used by clients of 'HEngine::Scene'
+  (compiling source file '/src/HEngine/ECS/ScenesLayer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      see declaration of 'std::unique_ptr<HEngine::ECS::Coordinator,std::default_delete<HEngine::ECS::Coordinator>>'
   
   GameEngine.cpp
 C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\GameEngine.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
@@ -114,58 +117,88 @@ C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(40,21): warning C4251: 'HEngine::TextComponent::text': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TextComponent'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(46,21): warning C4251: 'HEngine::TextComponent::text': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TextComponent'
   (compiling source file '/src/HEngine/Core/GameEngine.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(43,21): warning C4251: 'HEngine::TextComponent::fontPath': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TextComponent'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(49,21): warning C4251: 'HEngine::TextComponent::fontPath': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TextComponent'
   (compiling source file '/src/HEngine/Core/GameEngine.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(42,39): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(48,39): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
   (compiling source file '/src/HEngine/Core/GameEngine.cpp')
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Coordinator.h(47,40): warning C4251: 'HEngine::Coordinator::m_EntityManager': 'std::unique_ptr<HEngine::EntityManager,std::default_delete<HEngine::EntityManager>>' needs to have dll-interface to be used by clients of 'HEngine::Coordinator'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(59,28): warning C4251: 'HEngine::ECS::EntityManager::availableEntities': 'std::queue<HEngine::ECS::Entity,std::deque<HEngine::ECS::Entity,std::allocator<HEngine::ECS::Entity>>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::EntityManager'
+  (compiling source file '/src/HEngine/Core/GameEngine.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\queue(34,7):
+      see declaration of 'std::queue<HEngine::ECS::Entity,std::deque<HEngine::ECS::Entity,std::allocator<HEngine::ECS::Entity>>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(148,64): warning C4251: 'HEngine::ECS::ComponentManager::componentArrays': 'std::unordered_map<size_t,std::shared_ptr<void>,std::hash<uint64_t>,std::equal_to<uint64_t>,std::allocator<std::pair<const size_t,std::shared_ptr<void>>>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::ComponentManager'
+  (compiling source file '/src/HEngine/Core/GameEngine.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,7):
+      see declaration of 'std::unordered_map<size_t,std::shared_ptr<void>,std::hash<uint64_t>,std::equal_to<uint64_t>,std::allocator<std::pair<const size_t,std::shared_ptr<void>>>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(176,36): warning C4251: 'HEngine::ECS::System::entities': 'std::unordered_set<HEngine::ECS::Entity,std::hash<unsigned int>,std::equal_to<unsigned int>,std::allocator<HEngine::ECS::Entity>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::System'
+  (compiling source file '/src/HEngine/Core/GameEngine.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_set(59,7):
+      see declaration of 'std::unordered_set<HEngine::ECS::Entity,std::hash<unsigned int>,std::equal_to<unsigned int>,std::allocator<HEngine::ECS::Entity>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(217,52): warning C4251: 'HEngine::ECS::SystemManager::signatures': 'std::unordered_map<const char *,HEngine::ECS::Signature,std::hash<const char *>,std::equal_to<const char *>,std::allocator<std::pair<const char *const ,HEngine::ECS::Signature>>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::SystemManager'
+  (compiling source file '/src/HEngine/Core/GameEngine.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,7):
+      see declaration of 'std::unordered_map<const char *,HEngine::ECS::Signature,std::hash<const char *>,std::equal_to<const char *>,std::allocator<std::pair<const char *const ,HEngine::ECS::Signature>>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(218,66): warning C4251: 'HEngine::ECS::SystemManager::systems': 'std::unordered_map<const char *,std::shared_ptr<HEngine::ECS::System>,std::hash<const char *>,std::equal_to<const char *>,std::allocator<std::pair<const char *const ,std::shared_ptr<HEngine::ECS::System>>>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::SystemManager'
+  (compiling source file '/src/HEngine/Core/GameEngine.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,7):
+      see declaration of 'std::unordered_map<const char *,std::shared_ptr<HEngine::ECS::System>,std::hash<const char *>,std::equal_to<const char *>,std::allocator<std::pair<const char *const ,std::shared_ptr<HEngine::ECS::System>>>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(288,40): warning C4251: 'HEngine::ECS::Coordinator::entityManager': 'std::unique_ptr<HEngine::ECS::EntityManager,std::default_delete<HEngine::ECS::EntityManager>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::Coordinator'
   (compiling source file '/src/HEngine/Core/GameEngine.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
-      see declaration of 'std::unique_ptr<HEngine::EntityManager,std::default_delete<HEngine::EntityManager>>'
+      see declaration of 'std::unique_ptr<HEngine::ECS::EntityManager,std::default_delete<HEngine::ECS::EntityManager>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Coordinator.h(48,43): warning C4251: 'HEngine::Coordinator::m_ComponentManager': 'std::unique_ptr<HEngine::ComponentManager,std::default_delete<HEngine::ComponentManager>>' needs to have dll-interface to be used by clients of 'HEngine::Coordinator'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(289,43): warning C4251: 'HEngine::ECS::Coordinator::componentManager': 'std::unique_ptr<HEngine::ECS::ComponentManager,std::default_delete<HEngine::ECS::ComponentManager>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::Coordinator'
   (compiling source file '/src/HEngine/Core/GameEngine.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
-      see declaration of 'std::unique_ptr<HEngine::ComponentManager,std::default_delete<HEngine::ComponentManager>>'
+      see declaration of 'std::unique_ptr<HEngine::ECS::ComponentManager,std::default_delete<HEngine::ECS::ComponentManager>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Coordinator.h(49,40): warning C4251: 'HEngine::Coordinator::m_SystemManager': 'std::unique_ptr<HEngine::SystemManager,std::default_delete<HEngine::SystemManager>>' needs to have dll-interface to be used by clients of 'HEngine::Coordinator'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(290,40): warning C4251: 'HEngine::ECS::Coordinator::systemManager': 'std::unique_ptr<HEngine::ECS::SystemManager,std::default_delete<HEngine::ECS::SystemManager>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::Coordinator'
   (compiling source file '/src/HEngine/Core/GameEngine.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
-      see declaration of 'std::unique_ptr<HEngine::SystemManager,std::default_delete<HEngine::SystemManager>>'
+      see declaration of 'std::unique_ptr<HEngine::ECS::SystemManager,std::default_delete<HEngine::ECS::SystemManager>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(38,21): warning C4251: 'HEngine::Scene::m_Name': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::Scene'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(47,21): warning C4251: 'HEngine::Scene::m_Name': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::Scene'
   (compiling source file '/src/HEngine/Core/GameEngine.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(39,38): warning C4251: 'HEngine::Scene::m_Coordinator': 'std::unique_ptr<HEngine::Coordinator,std::default_delete<HEngine::Coordinator>>' needs to have dll-interface to be used by clients of 'HEngine::Scene'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(48,48): warning C4251: 'HEngine::Scene::m_RenderQueue': 'std::unique_ptr<HEngine::HRenderQueue,std::default_delete<HEngine::HRenderQueue>>' needs to have dll-interface to be used by clients of 'HEngine::Scene'
   (compiling source file '/src/HEngine/Core/GameEngine.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
-      see declaration of 'std::unique_ptr<HEngine::Coordinator,std::default_delete<HEngine::Coordinator>>'
+      see declaration of 'std::unique_ptr<HEngine::HRenderQueue,std::default_delete<HEngine::HRenderQueue>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(49,52): warning C4251: 'HEngine::Scene::m_Coordinator': 'std::unique_ptr<HEngine::ECS::Coordinator,std::default_delete<HEngine::ECS::Coordinator>>' needs to have dll-interface to be used by clients of 'HEngine::Scene'
+  (compiling source file '/src/HEngine/Core/GameEngine.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      see declaration of 'std::unique_ptr<HEngine::ECS::Coordinator,std::default_delete<HEngine::ECS::Coordinator>>'
   
 C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\GameEngine.h(25,26): warning C4251: 'HEngine::GameEngine::m_Window': 'sf::RenderWindow' needs to have dll-interface to be used by clients of 'HEngine::GameEngine'
   (compiling source file '/src/HEngine/Core/GameEngine.cpp')
       C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include\SFML\Graphics\RenderWindow.hpp(54,25):
       see declaration of 'sf::RenderWindow'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\GameEngine.h(26,65): warning C4251: 'HEngine::GameEngine::m_Scenes': 'std::unordered_map<std::string,std::shared_ptr<HEngine::Scene>,std::hash<std::string>,std::equal_to<std::string>,std::allocator<std::pair<const std::string,std::shared_ptr<HEngine::Scene>>>>' needs to have dll-interface to be used by clients of 'HEngine::GameEngine'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\GameEngine.h(28,20): warning C4251: 'HEngine::GameEngine::m_LayerStack': 'HEngine::LayerStack' needs to have dll-interface to be used by clients of 'HEngine::GameEngine'
   (compiling source file '/src/HEngine/Core/GameEngine.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,7):
-      see declaration of 'std::unordered_map<std::string,std::shared_ptr<HEngine::Scene>,std::hash<std::string>,std::equal_to<std::string>,std::allocator<std::pair<const std::string,std::shared_ptr<HEngine::Scene>>>>'
+      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\LayerStack.h(10,8):
+      see declaration of 'HEngine::LayerStack'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\GameEngine.h(27,34): warning C4251: 'HEngine::GameEngine::m_ActiveSceneNames': 'std::vector<std::string,std::allocator<std::string>>' needs to have dll-interface to be used by clients of 'HEngine::GameEngine'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\GameEngine.h(29,45): warning C4251: 'HEngine::GameEngine::m_Scenes': 'std::vector<std::shared_ptr<HEngine::Scene>,std::allocator<std::shared_ptr<HEngine::Scene>>>' needs to have dll-interface to be used by clients of 'HEngine::GameEngine'
   (compiling source file '/src/HEngine/Core/GameEngine.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
-      see declaration of 'std::vector<std::string,std::allocator<std::string>>'
+      see declaration of 'std::vector<std::shared_ptr<HEngine::Scene>,std::allocator<std::shared_ptr<HEngine::Scene>>>'
   
   Application.cpp
 C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\GameEngine.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
@@ -194,115 +227,93 @@ C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(40,21): warning C4251: 'HEngine::TextComponent::text': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TextComponent'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(46,21): warning C4251: 'HEngine::TextComponent::text': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TextComponent'
   (compiling source file '/src/HEngine/Core/Application.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(43,21): warning C4251: 'HEngine::TextComponent::fontPath': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TextComponent'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(49,21): warning C4251: 'HEngine::TextComponent::fontPath': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TextComponent'
   (compiling source file '/src/HEngine/Core/Application.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(42,39): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(48,39): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
   (compiling source file '/src/HEngine/Core/Application.cpp')
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Coordinator.h(47,40): warning C4251: 'HEngine::Coordinator::m_EntityManager': 'std::unique_ptr<HEngine::EntityManager,std::default_delete<HEngine::EntityManager>>' needs to have dll-interface to be used by clients of 'HEngine::Coordinator'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(59,28): warning C4251: 'HEngine::ECS::EntityManager::availableEntities': 'std::queue<HEngine::ECS::Entity,std::deque<HEngine::ECS::Entity,std::allocator<HEngine::ECS::Entity>>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::EntityManager'
+  (compiling source file '/src/HEngine/Core/Application.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\queue(34,7):
+      see declaration of 'std::queue<HEngine::ECS::Entity,std::deque<HEngine::ECS::Entity,std::allocator<HEngine::ECS::Entity>>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(148,64): warning C4251: 'HEngine::ECS::ComponentManager::componentArrays': 'std::unordered_map<size_t,std::shared_ptr<void>,std::hash<uint64_t>,std::equal_to<uint64_t>,std::allocator<std::pair<const size_t,std::shared_ptr<void>>>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::ComponentManager'
+  (compiling source file '/src/HEngine/Core/Application.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,7):
+      see declaration of 'std::unordered_map<size_t,std::shared_ptr<void>,std::hash<uint64_t>,std::equal_to<uint64_t>,std::allocator<std::pair<const size_t,std::shared_ptr<void>>>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(176,36): warning C4251: 'HEngine::ECS::System::entities': 'std::unordered_set<HEngine::ECS::Entity,std::hash<unsigned int>,std::equal_to<unsigned int>,std::allocator<HEngine::ECS::Entity>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::System'
+  (compiling source file '/src/HEngine/Core/Application.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_set(59,7):
+      see declaration of 'std::unordered_set<HEngine::ECS::Entity,std::hash<unsigned int>,std::equal_to<unsigned int>,std::allocator<HEngine::ECS::Entity>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(217,52): warning C4251: 'HEngine::ECS::SystemManager::signatures': 'std::unordered_map<const char *,HEngine::ECS::Signature,std::hash<const char *>,std::equal_to<const char *>,std::allocator<std::pair<const char *const ,HEngine::ECS::Signature>>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::SystemManager'
+  (compiling source file '/src/HEngine/Core/Application.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,7):
+      see declaration of 'std::unordered_map<const char *,HEngine::ECS::Signature,std::hash<const char *>,std::equal_to<const char *>,std::allocator<std::pair<const char *const ,HEngine::ECS::Signature>>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(218,66): warning C4251: 'HEngine::ECS::SystemManager::systems': 'std::unordered_map<const char *,std::shared_ptr<HEngine::ECS::System>,std::hash<const char *>,std::equal_to<const char *>,std::allocator<std::pair<const char *const ,std::shared_ptr<HEngine::ECS::System>>>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::SystemManager'
+  (compiling source file '/src/HEngine/Core/Application.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,7):
+      see declaration of 'std::unordered_map<const char *,std::shared_ptr<HEngine::ECS::System>,std::hash<const char *>,std::equal_to<const char *>,std::allocator<std::pair<const char *const ,std::shared_ptr<HEngine::ECS::System>>>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(288,40): warning C4251: 'HEngine::ECS::Coordinator::entityManager': 'std::unique_ptr<HEngine::ECS::EntityManager,std::default_delete<HEngine::ECS::EntityManager>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::Coordinator'
   (compiling source file '/src/HEngine/Core/Application.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
-      see declaration of 'std::unique_ptr<HEngine::EntityManager,std::default_delete<HEngine::EntityManager>>'
+      see declaration of 'std::unique_ptr<HEngine::ECS::EntityManager,std::default_delete<HEngine::ECS::EntityManager>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Coordinator.h(48,43): warning C4251: 'HEngine::Coordinator::m_ComponentManager': 'std::unique_ptr<HEngine::ComponentManager,std::default_delete<HEngine::ComponentManager>>' needs to have dll-interface to be used by clients of 'HEngine::Coordinator'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(289,43): warning C4251: 'HEngine::ECS::Coordinator::componentManager': 'std::unique_ptr<HEngine::ECS::ComponentManager,std::default_delete<HEngine::ECS::ComponentManager>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::Coordinator'
   (compiling source file '/src/HEngine/Core/Application.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
-      see declaration of 'std::unique_ptr<HEngine::ComponentManager,std::default_delete<HEngine::ComponentManager>>'
+      see declaration of 'std::unique_ptr<HEngine::ECS::ComponentManager,std::default_delete<HEngine::ECS::ComponentManager>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Coordinator.h(49,40): warning C4251: 'HEngine::Coordinator::m_SystemManager': 'std::unique_ptr<HEngine::SystemManager,std::default_delete<HEngine::SystemManager>>' needs to have dll-interface to be used by clients of 'HEngine::Coordinator'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\HECS.hpp(290,40): warning C4251: 'HEngine::ECS::Coordinator::systemManager': 'std::unique_ptr<HEngine::ECS::SystemManager,std::default_delete<HEngine::ECS::SystemManager>>' needs to have dll-interface to be used by clients of 'HEngine::ECS::Coordinator'
   (compiling source file '/src/HEngine/Core/Application.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
-      see declaration of 'std::unique_ptr<HEngine::SystemManager,std::default_delete<HEngine::SystemManager>>'
+      see declaration of 'std::unique_ptr<HEngine::ECS::SystemManager,std::default_delete<HEngine::ECS::SystemManager>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(38,21): warning C4251: 'HEngine::Scene::m_Name': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::Scene'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(47,21): warning C4251: 'HEngine::Scene::m_Name': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::Scene'
   (compiling source file '/src/HEngine/Core/Application.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(39,38): warning C4251: 'HEngine::Scene::m_Coordinator': 'std::unique_ptr<HEngine::Coordinator,std::default_delete<HEngine::Coordinator>>' needs to have dll-interface to be used by clients of 'HEngine::Scene'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(48,48): warning C4251: 'HEngine::Scene::m_RenderQueue': 'std::unique_ptr<HEngine::HRenderQueue,std::default_delete<HEngine::HRenderQueue>>' needs to have dll-interface to be used by clients of 'HEngine::Scene'
   (compiling source file '/src/HEngine/Core/Application.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
-      see declaration of 'std::unique_ptr<HEngine::Coordinator,std::default_delete<HEngine::Coordinator>>'
+      see declaration of 'std::unique_ptr<HEngine::HRenderQueue,std::default_delete<HEngine::HRenderQueue>>'
+  
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Scene.h(49,52): warning C4251: 'HEngine::Scene::m_Coordinator': 'std::unique_ptr<HEngine::ECS::Coordinator,std::default_delete<HEngine::ECS::Coordinator>>' needs to have dll-interface to be used by clients of 'HEngine::Scene'
+  (compiling source file '/src/HEngine/Core/Application.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      see declaration of 'std::unique_ptr<HEngine::ECS::Coordinator,std::default_delete<HEngine::ECS::Coordinator>>'
   
 C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\GameEngine.h(25,26): warning C4251: 'HEngine::GameEngine::m_Window': 'sf::RenderWindow' needs to have dll-interface to be used by clients of 'HEngine::GameEngine'
   (compiling source file '/src/HEngine/Core/Application.cpp')
       C:\Users\Asus\Desktop\coding_files\c++\cpplibraries\SFML-3.0.0\include\SFML\Graphics\RenderWindow.hpp(54,25):
       see declaration of 'sf::RenderWindow'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\GameEngine.h(26,65): warning C4251: 'HEngine::GameEngine::m_Scenes': 'std::unordered_map<std::string,std::shared_ptr<HEngine::Scene>,std::hash<std::string>,std::equal_to<std::string>,std::allocator<std::pair<const std::string,std::shared_ptr<HEngine::Scene>>>>' needs to have dll-interface to be used by clients of 'HEngine::GameEngine'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\GameEngine.h(28,20): warning C4251: 'HEngine::GameEngine::m_LayerStack': 'HEngine::LayerStack' needs to have dll-interface to be used by clients of 'HEngine::GameEngine'
   (compiling source file '/src/HEngine/Core/Application.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,7):
-      see declaration of 'std::unordered_map<std::string,std::shared_ptr<HEngine::Scene>,std::hash<std::string>,std::equal_to<std::string>,std::allocator<std::pair<const std::string,std::shared_ptr<HEngine::Scene>>>>'
+      C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\LayerStack.h(10,8):
+      see declaration of 'HEngine::LayerStack'
   
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\GameEngine.h(27,34): warning C4251: 'HEngine::GameEngine::m_ActiveSceneNames': 'std::vector<std::string,std::allocator<std::string>>' needs to have dll-interface to be used by clients of 'HEngine::GameEngine'
+C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\GameEngine.h(29,45): warning C4251: 'HEngine::GameEngine::m_Scenes': 'std::vector<std::shared_ptr<HEngine::Scene>,std::allocator<std::shared_ptr<HEngine::Scene>>>' needs to have dll-interface to be used by clients of 'HEngine::GameEngine'
   (compiling source file '/src/HEngine/Core/Application.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
-      see declaration of 'std::vector<std::string,std::allocator<std::string>>'
+      see declaration of 'std::vector<std::shared_ptr<HEngine::Scene>,std::allocator<std::shared_ptr<HEngine::Scene>>>'
   
 C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Core\Application.h(17,31): warning C4251: 'HEngine::Application::engine': 'std::unique_ptr<HEngine::GameEngine,std::default_delete<HEngine::GameEngine>>' needs to have dll-interface to be used by clients of 'HEngine::Application'
   (compiling source file '/src/HEngine/Core/Application.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
       see declaration of 'std::unique_ptr<HEngine::GameEngine,std::default_delete<HEngine::GameEngine>>'
-  
-  System.cpp
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(10,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/src/HEngine/ECS/System.cpp')
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(11,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/src/HEngine/ECS/System.cpp')
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(22,47): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/src/HEngine/ECS/System.cpp')
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(22,60): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/src/HEngine/ECS/System.cpp')
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(23,47): warning C4244: '/=': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/src/HEngine/ECS/System.cpp')
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\Utils\HVector2D.h(23,60): warning C4244: '/=': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/src/HEngine/ECS/System.cpp')
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(14,21): warning C4251: 'HEngine::TagComponent::Tag': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TagComponent'
-  (compiling source file '/src/HEngine/ECS/System.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(40,21): warning C4251: 'HEngine::TextComponent::text': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TextComponent'
-  (compiling source file '/src/HEngine/ECS/System.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(43,21): warning C4251: 'HEngine::TextComponent::fontPath': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'HEngine::TextComponent'
-  (compiling source file '/src/HEngine/ECS/System.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Component.h(42,39): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
-  (compiling source file '/src/HEngine/ECS/System.cpp')
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Coordinator.h(47,40): warning C4251: 'HEngine::Coordinator::m_EntityManager': 'std::unique_ptr<HEngine::EntityManager,std::default_delete<HEngine::EntityManager>>' needs to have dll-interface to be used by clients of 'HEngine::Coordinator'
-  (compiling source file '/src/HEngine/ECS/System.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
-      see declaration of 'std::unique_ptr<HEngine::EntityManager,std::default_delete<HEngine::EntityManager>>'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Coordinator.h(48,43): warning C4251: 'HEngine::Coordinator::m_ComponentManager': 'std::unique_ptr<HEngine::ComponentManager,std::default_delete<HEngine::ComponentManager>>' needs to have dll-interface to be used by clients of 'HEngine::Coordinator'
-  (compiling source file '/src/HEngine/ECS/System.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
-      see declaration of 'std::unique_ptr<HEngine::ComponentManager,std::default_delete<HEngine::ComponentManager>>'
-  
-C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\Engine\src\HEngine\ECS\Coordinator.h(49,40): warning C4251: 'HEngine::Coordinator::m_SystemManager': 'std::unique_ptr<HEngine::SystemManager,std::default_delete<HEngine::SystemManager>>' needs to have dll-interface to be used by clients of 'HEngine::Coordinator'
-  (compiling source file '/src/HEngine/ECS/System.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
-      see declaration of 'std::unique_ptr<HEngine::SystemManager,std::default_delete<HEngine::SystemManager>>'
   
   Generating Code...
 sfml-window-s-d.lib(VideoMode.obj) : warning LNK4099: PDB 'sfml-window-s.pdb' was not found with 'sfml-window-s-d.lib(VideoMode.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-window-s.pdb'; linking object as if no debug info
@@ -322,26 +333,26 @@ sfml-window-s-d.lib(Context.obj) : warning LNK4099: PDB 'sfml-window-s.pdb' was 
 sfml-window-s-d.lib(WglContext.obj) : warning LNK4099: PDB 'sfml-window-s.pdb' was not found with 'sfml-window-s-d.lib(WglContext.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-window-s.pdb'; linking object as if no debug info
 sfml-window-s-d.lib(JoystickImpl.obj) : warning LNK4099: PDB 'sfml-window-s.pdb' was not found with 'sfml-window-s-d.lib(JoystickImpl.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-window-s.pdb'; linking object as if no debug info
 sfml-window-s-d.lib(SensorImpl.obj) : warning LNK4099: PDB 'sfml-window-s.pdb' was not found with 'sfml-window-s-d.lib(SensorImpl.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-window-s.pdb'; linking object as if no debug info
-sfml-graphics-s-d.lib(RenderTarget.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(RenderTarget.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
-sfml-graphics-s-d.lib(RenderWindow.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(RenderWindow.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
 sfml-graphics-s-d.lib(Transformable.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(Transformable.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
 sfml-graphics-s-d.lib(Shape.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(Shape.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
 sfml-graphics-s-d.lib(Texture.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(Texture.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
 sfml-graphics-s-d.lib(Font.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(Font.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
 sfml-graphics-s-d.lib(RectangleShape.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(RectangleShape.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(RenderTarget.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(RenderTarget.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(RenderWindow.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(RenderWindow.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
 sfml-graphics-s-d.lib(Text.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(Text.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
 sfml-graphics-s-d.lib(RenderStates.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(RenderStates.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(VertexArray.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(VertexArray.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
 sfml-graphics-s-d.lib(GLExtensions.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(GLExtensions.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
 sfml-graphics-s-d.lib(GLCheck.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(GLCheck.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(Image.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(Image.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
+sfml-graphics-s-d.lib(TextureSaver.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(TextureSaver.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
 sfml-graphics-s-d.lib(BlendMode.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(BlendMode.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
 sfml-graphics-s-d.lib(StencilMode.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(StencilMode.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
 sfml-graphics-s-d.lib(View.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(View.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
 sfml-graphics-s-d.lib(Shader.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(Shader.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
 sfml-graphics-s-d.lib(VertexBuffer.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(VertexBuffer.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
-sfml-graphics-s-d.lib(Image.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(Image.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
 sfml-graphics-s-d.lib(RenderTextureImplFBO.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(RenderTextureImplFBO.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
-sfml-graphics-s-d.lib(VertexArray.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(VertexArray.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
-sfml-graphics-s-d.lib(TextureSaver.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(TextureSaver.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
 sfml-graphics-s-d.lib(Glsl.obj) : warning LNK4099: PDB 'sfml-graphics-s.pdb' was not found with 'sfml-graphics-s-d.lib(Glsl.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-graphics-s.pdb'; linking object as if no debug info
 sfml-system-s-d.lib(String.obj) : warning LNK4099: PDB 'sfml-system-s.pdb' was not found with 'sfml-system-s-d.lib(String.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-system-s.pdb'; linking object as if no debug info
 sfml-system-s-d.lib(Clock.obj) : warning LNK4099: PDB 'sfml-system-s.pdb' was not found with 'sfml-system-s-d.lib(Clock.obj)' or at 'C:\Users\Asus\Desktop\personal_projects\Turnover\SampleGamePortfolio\SampleGame\x64\Debug\sfml-system-s.pdb'; linking object as if no debug info

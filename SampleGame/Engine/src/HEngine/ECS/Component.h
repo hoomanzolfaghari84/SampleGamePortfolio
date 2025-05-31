@@ -17,12 +17,18 @@ namespace HEngine {
         TagComponent(const std::string& tag) : Tag(tag) {}
     };
 
-    struct HENGINE_API TransformComponent {
+    struct HENGINE_API Transform2DComponent {
         HVector2Df translation = HVector2Df::Zero();
         float rotation = 0.f;
         HVector2Df scale = HVector2Df::One();
     };
 
+    struct HENGINE_API Kinematics2DComponent {
+        HVector2Df position = HVector2Df::Zero();
+        HVector2Df velocity = HVector2Df::Zero();
+        HVector2Df acceleration = HVector2Df::Zero();
+    };
+    
     struct HENGINE_API RectangleComponent {
         HVector2Df position = HVector2Df::Zero();
         HVector2Df size = HVector2Df::One();

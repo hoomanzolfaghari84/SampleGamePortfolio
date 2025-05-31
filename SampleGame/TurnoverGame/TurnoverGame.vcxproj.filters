@@ -18,9 +18,6 @@
     <ClCompile Include="src\TurnoverGame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\MenuScene\MenuScene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MenuScene\MenuScene.h">
@@ -28,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Font Include="..\..\..\..\..\personal projects\cpp-training\library-setup-training\WindowKill\resources\arial.ttf" />
+    <Font Include="arial.ttf" />
   </ItemGroup>
 </Project>

@@ -14,9 +14,20 @@ namespace HEngine {
         GameEngine();
         ~GameEngine();
 
+       /* void OnEvent(Event& e);
+
+        void PushLayer(Layer* layer);
+        void PushOverlay(Layer* layer);
+        Window& GetWindow() { return *m_Window; }
+
+        */
+
+
         void Init();
         void Run();
         void Shutdown();
+
+
 
         void AddScene(std::shared_ptr<Scene> scene);
         //void RemoveScene(const std::string& name);

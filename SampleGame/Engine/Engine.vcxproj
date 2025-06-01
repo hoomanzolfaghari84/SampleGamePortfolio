@@ -23,14 +23,21 @@
     <ClCompile Include="src\HEngine\ECS\ScenesLayer.cpp" />
     <ClCompile Include="src\HEngine\Core\LayerStack.cpp" />
     <ClCompile Include="src\HEngine\Core\Layer.cpp" />
+    <ClCompile Include="src\HEngine\SFMLBackend\SFMLWindow.cpp" />
     <ClCompile Include="src\HEngine\Utils\Logger.cpp" />
     <ClCompile Include="src\HEngine\Core\GameEngine.cpp" />
     <ClCompile Include="src\HEngine\Core\Timestep.cpp" />
     <ClCompile Include="src\HEngine\Core\Application.cpp" />
+    <ClCompile Include="src\HEngine\Core\Window.cpp" />
+    <ClInclude Include="src\HEngine\Core\KeyCodes.h" />
+    <ClInclude Include="src\HEngine\Core\MouseCodes.h" />
+    <ClInclude Include="src\HEngine\Events\ApplicationEvent.h" />
     <ClInclude Include="src\HEngine\Events\EventBus.h" />
+    <ClInclude Include="src\HEngine\Events\KeyEvent.h" />
+    <ClInclude Include="src\HEngine\Events\MouseEvent.h" />
     <ClInclude Include="src\HEngine\Renderer\RenderQueue.h" />
     <ClInclude Include="src\HEngine\ECS\Systems.h" />
-    <ClInclude Include="src\HEngine\Renderer\SFMLRenderAPI.h" />
+    <ClInclude Include="src\HEngine\SFMLBackend\SFMLRenderAPI.h" />
     <ClInclude Include="src\HEngine\Renderer\RenderAPI.h" />
     <ClInclude Include="src\HEngine\ECS\ScenesLayer.h" />
     <ClInclude Include="src\HEngine\Core\LayerStack.h" />
@@ -41,12 +48,14 @@
     <ClCompile Include="src\hepch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClInclude Include="src\HEngine\Core\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\HEngine\Core\Layer.h" />
     <ClInclude Include="src\HEngine\ECS\Component.h" />
     <ClInclude Include="src\HEngine\ECS\HECS.hpp" />
     <ClInclude Include="src\HEngine\Events\HEvent.h" />
+    <ClInclude Include="src\HEngine\SFMLBackend\SFMLWindow.h" />
     <ClInclude Include="src\HEngine\Utils\Color.h" />
     <ClInclude Include="src\HEngine\Utils\HMath.h" />
     <ClInclude Include="src\HEngine\Utils\Logger.h" />

@@ -3,7 +3,7 @@
 #include <chrono>
 #include "HEngine/ECS/ScenesLayer.h"
 #include "HEngine/Renderer/RenderAPI.h"
-#include "HEngine/Renderer/SFMLRenderAPI.h"
+#include "HEngine/SFMLBackend/SFMLRenderAPI.h"
 
 HEngine::GameEngine::GameEngine()
     : m_Window(sf::VideoMode({1280, 720}), "HEngine Game") {

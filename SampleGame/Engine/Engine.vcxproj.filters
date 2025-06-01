@@ -45,6 +45,12 @@
     <ClCompile Include="src\HEngine\Renderer\RenderQueue.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\HEngine\Core\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HEngine\SFMLBackend\SFMLWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\HEngine\Core\Application.h">
@@ -107,7 +113,7 @@
     <ClInclude Include="src\HEngine\Renderer\RenderAPI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\HEngine\Renderer\SFMLRenderAPI.h">
+    <ClInclude Include="src\HEngine\SFMLBackend\SFMLRenderAPI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\HEngine\ECS\Systems.h">
@@ -117,6 +123,27 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\HEngine\Events\EventBus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HEngine\Core\Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HEngine\SFMLBackend\SFMLWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HEngine\Events\ApplicationEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HEngine\Events\KeyEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HEngine\Core\KeyCodes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HEngine\Events\MouseEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HEngine\Core\MouseCodes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
